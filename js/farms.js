@@ -62,38 +62,37 @@ function farmCardHTML(farm) {
         <div class="metric"><div class="lbl">${t("footprint")}</div><div class="val">${tr(farm.dimensions)}</div></div>
       </div>
 
-      <button class="video-btn" data-video>▶ ${t("watch")} ${tr(farm.videoTitle)}</button>
+      <button class="details-toggle" data-details-toggle>
+        <span>📋 ${t("show_details")}</span> <span class="chev">▾</span>
+      </button>
+      <div class="fc-details" data-details>
+        <button class="video-btn" data-video style="margin-top:14px">▶ ${t("watch")} ${tr(farm.videoTitle)}</button>
 
-      <div class="section-label" style="margin-top:20px">⚙️ ${t("build_multiplier")}</div>
-      <div class="mult-row">
-        <label>${t("modules_to_build")}</label>
-        <div class="stepper">
-          <button data-mult-dn>−</button>
-          <input type="number" min="1" value="${mult}" data-mult-input>
-          <button data-mult-up>+</button>
+        <div class="section-label" style="margin-top:16px">⚙️ ${t("build_multiplier")}</div>
+        <div class="mult-row">
+          <label>${t("modules_to_build")}</label>
+          <div class="stepper">
+            <button data-mult-dn>−</button>
+            <input type="number" min="1" value="${mult}" data-mult-input>
+            <button data-mult-up>+</button>
+          </div>
+          <span style="font-size:.78rem;color:var(--text-faint)">${t("scales_auto")}</span>
         </div>
-        <span style="font-size:.78rem;color:var(--text-faint)">${t("scales_auto")}</span>
-      </div>
 
-      <div class="prog-wrap">
-        <div class="prog-top"><span>${t("collection_progress")}</span><span data-prog-txt>${prog.done}/${prog.total}</span></div>
-        <div class="prog-bar"><div class="prog-fill" style="width:${prog.pct}%"></div></div>
-      </div>
-
-      <div class="section-label">📦 ${t("materials")}
-        <button class="btn ghost sm" style="margin-left:auto" data-reset-checks>${t("reset")}</button>
-      </div>
-      <div class="checklist" data-checklist>${matRows}</div>
-
-      <div class="collapse" data-collapse>
-        <div class="section-label collapse-head" data-collapse-toggle>
-          🧭 ${t("blueprint")} <span class="chev">▶</span>
+        <div class="prog-wrap">
+          <div class="prog-top"><span>${t("collection_progress")}</span><span data-prog-txt>${prog.done}/${prog.total}</span></div>
+          <div class="prog-bar"><div class="prog-fill" style="width:${prog.pct}%"></div></div>
         </div>
-        <div class="collapse-body">
-          <div class="steps-list" style="margin-bottom:16px">${steps}</div>
-          <div class="section-label" style="margin-top:0">${t("pro_tips")}</div>
-          <ul class="tips-list">${tips}</ul>
+
+        <div class="section-label">📦 ${t("materials")}
+          <button class="btn ghost sm" style="margin-left:auto" data-reset-checks>${t("reset")}</button>
         </div>
+        <div class="checklist" data-checklist>${matRows}</div>
+
+        <div class="section-label">🧭 ${t("blueprint")}</div>
+        <div class="steps-list" style="margin-bottom:16px">${steps}</div>
+        <div class="section-label" style="margin-top:0">${t("pro_tips")}</div>
+        <ul class="tips-list">${tips}</ul>
       </div>
     </div>
   </div>`;
@@ -146,8 +145,13 @@ function wireFarmCard(farm) {
     toast(t("checklist_reset"), "🔄");
   };
 
-  const collapse = card.querySelector("[data-collapse]");
-  card.querySelector("[data-collapse-toggle]").onclick = () => collapse.classList.toggle("open");
+  const details = card.querySelector("[data-details]");
+  const dToggle = card.querySelector("[data-details-toggle]");
+  dToggle.onclick = () => {
+    const open = details.classList.toggle("open");
+    dToggle.classList.toggle("open", open);
+    details.style.maxHeight = open ? details.scrollHeight + "px" : "0";
+  };
 
   card.querySelectorAll("[data-video]").forEach(el => el.addEventListener("click", () => openVideo(farm)));
 }
