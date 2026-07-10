@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MineGuide · Guide de crafting Minecraft</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>try{var _t=localStorage.getItem('mcguide.theme');if(_t&&_t!=='cozy')document.documentElement.setAttribute('data-theme',_t);}catch(e){}</script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
 </head>
 <body>
@@ -19,6 +20,7 @@
         <a href="index.html" class="active">🧱 <span class="lbl" data-i18n="nav_crafting">Fabrication</span></a>
         <a href="farms.html">🏭 <span class="lbl" data-i18n="nav_farms">Fermes</span></a>
         <a href="buildings.html">🏛️ <span class="lbl" data-i18n="nav_builds">Bâtiments</span></a>
+        <select class="theme-select" id="themeSelect" aria-label="Theme"></select>
         <button class="lang-btn" id="langToggle">EN</button>
       </nav>
     </div>

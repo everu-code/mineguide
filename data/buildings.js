@@ -97,7 +97,8 @@ window.BUILDINGS = [
         "Inset the wall a block beneath the windows for a small sill and added depth."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "yvonOuEGDTk"
   },
   {
     "id": "living_spruce_log_cabin",
@@ -201,7 +202,8 @@ window.BUILDINGS = [
         "Plant a few spruce trees around it and let snow gather: the mountain mood does the rest."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "xGBGcZnqiiY"
   },
   {
     "id": "living_cherry_flower_cottage",
@@ -305,7 +307,8 @@ window.BUILDINGS = [
         "Vary the flowers in the pots instead of repeating one: the garden feels alive and natural."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "tEKniivVAz8"
   },
   {
     "id": "living_jungle_treehouse",
@@ -409,7 +412,8 @@ window.BUILDINGS = [
         "Let moss and leaves spill over the deck to blend the hut into the canopy."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "O3Jljesg5ok"
   },
   {
     "id": "living_sandstone_villa",
@@ -513,7 +517,8 @@ window.BUILDINGS = [
         "A band of light blue terracotta beneath the pool water makes the turquoise far more vivid."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "t853IoimdD8"
   },
   {
     "id": "living_modern_suburban_house",
@@ -617,7 +622,338 @@ window.BUILDINGS = [
         "Full-height glazing reads far more contemporary than small individual windows."
       ]
     },
-    "category": "living"
+    "category": "living",
+    "videoId": "CFooRRK1iaY"
+  },
+  {
+    "id": "living_desert_adobe_home",
+    "emoji": "🏜️",
+    "difficulty": "Easy",
+    "tags": [
+      "desert",
+      "adobe",
+      "sandstone"
+    ],
+    "name": {
+      "fr": "Maison en adobe du désert",
+      "en": "Desert Adobe Home"
+    },
+    "style": {
+      "fr": "Adobe désertique",
+      "en": "Desert Adobe"
+    },
+    "size": {
+      "fr": "8×8",
+      "en": "8×8"
+    },
+    "description": {
+      "fr": "Une petite maison de plain-pied aux murs ocre et au toit plat, parfaite pour un début de partie dans un biome désertique. Ses formes cubiques, ses larges rebords de terracotta et son toit-terrasse accessible lui donnent un vrai charme d'habitation du désert, tout en restant très rapide à monter avec les blocs qu'on ramasse sur place.",
+      "en": "A single-storey home with ochre walls and a flat roof, ideal for an early-game base in a desert biome. Its cubic shapes, wide terracotta ledges and walkable rooftop terrace give it a genuine desert-dwelling look while staying quick to build from blocks you gather on the spot."
+    },
+    "materials": [
+      {
+        "item": "smooth_sandstone",
+        "qty": 96
+      },
+      {
+        "item": "cut_sandstone",
+        "qty": 40
+      },
+      {
+        "item": "sandstone_slab",
+        "qty": 48
+      },
+      {
+        "item": "sandstone_stairs",
+        "qty": 24
+      },
+      {
+        "item": "orange_terracotta",
+        "qty": 30
+      },
+      {
+        "item": "acacia_log",
+        "qty": 16
+      },
+      {
+        "item": "acacia_door",
+        "qty": 1
+      },
+      {
+        "item": "acacia_trapdoor",
+        "qty": 4
+      },
+      {
+        "item": "glass_pane",
+        "qty": 12
+      },
+      {
+        "item": "lantern",
+        "qty": 6
+      },
+      {
+        "item": "chest",
+        "qty": 2
+      },
+      {
+        "item": "campfire",
+        "qty": 1
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Trace un carré de 8×8 et pose le sol en smooth_sandstone, puis dresse les murs sur 4 blocs de haut en smooth_sandstone.",
+        "Plante un poteau d'acacia_log à chaque angle et encadre la porte d'acacia_log pour structurer la façade.",
+        "Perce les ouvertures : la porte en acacia_door à l'avant et des fenêtres fermées de glass_pane sur trois côtés.",
+        "Ceinture le sommet des murs d'une rangée de cut_sandstone en léger débord, puis couvre le toit à plat en sandstone_slab.",
+        "Borde la terrasse d'un muret en orange_terracotta et ajoute quelques marches de sandstone_stairs pour y accéder par l'extérieur.",
+        "Installe des acacia_trapdoor en auvent au-dessus des fenêtres pour l'ombre.",
+        "Aménage l'intérieur avec deux chest et un campfire, puis éclaire avec des lantern dedans et sur le toit."
+      ],
+      "en": [
+        "Mark out an 8×8 square, lay the floor in smooth_sandstone, then raise the walls 4 blocks high in smooth_sandstone.",
+        "Set an acacia_log post at each corner and frame the doorway with acacia_log to define the facade.",
+        "Cut the openings: an acacia_door at the front and closed glass_pane windows on three sides.",
+        "Ring the top of the walls with a slightly overhanging course of cut_sandstone, then cap the roof flat with sandstone_slab.",
+        "Edge the terrace with a low orange_terracotta parapet and add sandstone_stairs outside to reach it.",
+        "Fit acacia_trapdoor as small awnings above the windows for shade.",
+        "Furnish inside with two chest and a campfire, then light it with lantern indoors and up on the roof."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Mélange smooth_sandstone et cut_sandstone plutôt qu'un seul type de bloc : la variation de texture évite l'effet mur trop lisse.",
+        "Un toit plat n'est pas mob-proof en soi, garde un bon niveau de lumière avec les lantern sur la terrasse.",
+        "Décale légèrement quelques blocs de la façade vers l'intérieur pour creuser des niches d'ombre très typiques de l'architecture désertique."
+      ],
+      "en": [
+        "Mix smooth_sandstone with cut_sandstone instead of a single block type: the texture variation avoids a flat, monotonous wall.",
+        "A flat roof isn't mob-proof on its own, so keep the light level up with lantern across the terrace.",
+        "Recess a few facade blocks inward to carve shaded niches, a hallmark of desert architecture."
+      ]
+    },
+    "category": "living",
+    "videoId": "bNiExhHWbT4"
+  },
+  {
+    "id": "living_aframe_lakeside_cabin",
+    "emoji": "🛖",
+    "difficulty": "Medium",
+    "tags": [
+      "a-frame",
+      "lakeside",
+      "cozy"
+    ],
+    "name": {
+      "fr": "Chalet en A au bord du lac",
+      "en": "A-Frame Lakeside Cabin"
+    },
+    "style": {
+      "fr": "Chalet en A",
+      "en": "A-Frame Cabin"
+    },
+    "size": {
+      "fr": "7×11",
+      "en": "7×11"
+    },
+    "description": {
+      "fr": "Un chalet tout en pente où le toit descend jusqu'au sol pour former un grand triangle emblématique. Idéal posé au bord d'un lac ou d'une rivière, il offre une petite mezzanine sous les combles et une baie vitrée qui capte la vue sur l'eau. Un projet un peu plus technique à cause du toit en A, mais très gratifiant.",
+      "en": "A cabin built entirely around a slope, where the roof runs all the way to the ground to form an iconic triangle. Perfect on the shore of a lake or river, it packs a small loft under the rafters and a glass gable that frames the view over the water. A slightly trickier build because of the A-frame roof, but very rewarding."
+    },
+    "materials": [
+      {
+        "item": "spruce_planks",
+        "qty": 64
+      },
+      {
+        "item": "spruce_stairs",
+        "qty": 80
+      },
+      {
+        "item": "spruce_slab",
+        "qty": 32
+      },
+      {
+        "item": "spruce_log",
+        "qty": 20
+      },
+      {
+        "item": "stripped_spruce_log",
+        "qty": 16
+      },
+      {
+        "item": "dark_oak_stairs",
+        "qty": 48
+      },
+      {
+        "item": "glass_pane",
+        "qty": 24
+      },
+      {
+        "item": "spruce_door",
+        "qty": 1
+      },
+      {
+        "item": "spruce_trapdoor",
+        "qty": 6
+      },
+      {
+        "item": "cobblestone",
+        "qty": 40
+      },
+      {
+        "item": "lantern",
+        "qty": 8
+      },
+      {
+        "item": "campfire",
+        "qty": 1
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Pose une plateforme de 7×11 en spruce_planks, légèrement surélevée sur des piliers de cobblestone si tu construis au bord de l'eau.",
+        "Monte les deux pignons triangulaires en stripped_spruce_log pour dessiner la forme en A, du sol jusqu'à la pointe.",
+        "Relie les pignons par une poutre faîtière en spruce_log, puis descends les deux pans du toit en spruce_stairs jusqu'au plancher.",
+        "Double le toit d'une seconde couche de dark_oak_stairs pour lui donner de l'épaisseur et une belle bicolore.",
+        "Vitre entièrement le pignon avant avec des glass_pane et pose la spruce_door au centre, sous un petit auvent de spruce_slab.",
+        "Ajoute une mezzanine intérieure en spruce_slab à mi-hauteur, accessible par une échelle, avec des spruce_trapdoor en garde-corps.",
+        "Aménage une terrasse en spruce_planks côté lac avec un campfire, et éclaire l'ensemble avec des lantern suspendues à la charpente."
+      ],
+      "en": [
+        "Lay a 7×11 platform in spruce_planks, slightly raised on cobblestone piles if you build over the water.",
+        "Raise the two triangular gables in stripped_spruce_log to draw the A shape, from the ground up to the peak.",
+        "Join the gables with a spruce_log ridge beam, then run both roof slopes down in spruce_stairs to the floor.",
+        "Layer a second course of dark_oak_stairs over the roof for thickness and a nice two-tone finish.",
+        "Fully glaze the front gable with glass_pane and set the spruce_door in the middle, under a small spruce_slab awning.",
+        "Add an interior loft of spruce_slab at mid-height, reached by a ladder, with spruce_trapdoor as railings.",
+        "Build a lakeside deck in spruce_planks with a campfire, and light everything with lantern hung from the rafters."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Pour un toit en A propre, superpose deux escaliers dos à dos à chaque niveau : ça évite les trous et donne une pente pleine vue de l'intérieur.",
+        "Surélève le chalet sur pilotis de cobblestone au-dessus de l'eau pour un effet ponton, et ajoute une échelle qui plonge dans le lac.",
+        "La façade entièrement vitrée fait entrer beaucoup de lumière le jour, mais garde des lantern à l'intérieur pour empêcher les mobs d'apparaître la nuit."
+      ],
+      "en": [
+        "For a clean A-frame roof, stack two stairs back-to-back at each level: it avoids gaps and gives a solid slope seen from inside.",
+        "Raise the cabin on cobblestone stilts over the water for a jetty feel, and add a ladder that drops into the lake.",
+        "The fully glazed gable lets in lots of daylight, but keep lanterns inside to stop mobs spawning at night."
+      ]
+    },
+    "category": "living",
+    "videoId": "ZoiH8KYiuIk"
+  },
+  {
+    "id": "living_mushroom_fairytale_hut",
+    "emoji": "🍄",
+    "difficulty": "Hard",
+    "tags": [
+      "mushroom",
+      "fairytale",
+      "whimsical"
+    ],
+    "name": {
+      "fr": "Hutte champignon féérique",
+      "en": "Mushroom Fairytale Hut"
+    },
+    "style": {
+      "fr": "Champignon féérique",
+      "en": "Fairytale Mushroom"
+    },
+    "size": {
+      "fr": "9×9",
+      "en": "9×9"
+    },
+    "description": {
+      "fr": "Une maisonnette en forme de champignon tout droit sortie d'un conte : un pied blanc et trapu surmonté d'un large chapeau rouge parsemé de points blancs. L'intérieur rond et douillet tient dans le pied, tandis que le chapeau bombé protège une petite terrasse. C'est le projet le plus exigeant du lot à cause de son dôme, mais son côté féérique fait toujours son effet.",
+      "en": "A storybook mushroom-shaped cottage: a stout white stem topped by a wide red cap speckled with white spots. The cosy round interior sits inside the stem, while the domed cap shelters a little porch. It's the most demanding build of the set because of the dome, but its fairytale charm never fails to impress."
+    },
+    "materials": [
+      {
+        "item": "bone_block",
+        "qty": 60
+      },
+      {
+        "item": "red_terracotta",
+        "qty": 70
+      },
+      {
+        "item": "red_wool",
+        "qty": 30
+      },
+      {
+        "item": "white_wool",
+        "qty": 20
+      },
+      {
+        "item": "birch_planks",
+        "qty": 24
+      },
+      {
+        "item": "birch_door",
+        "qty": 1
+      },
+      {
+        "item": "birch_trapdoor",
+        "qty": 4
+      },
+      {
+        "item": "glass_pane",
+        "qty": 8
+      },
+      {
+        "item": "lantern",
+        "qty": 6
+      },
+      {
+        "item": "moss_carpet",
+        "qty": 16
+      },
+      {
+        "item": "oak_fence",
+        "qty": 6
+      },
+      {
+        "item": "flower_pot",
+        "qty": 4
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Dessine un cercle de 7 blocs de diamètre et monte le pied du champignon sur 5 blocs de haut en bone_block, en le laissant légèrement bombé.",
+        "Perce une birch_door à l'avant et deux petites fenêtres rondes en glass_pane sur les côtés du pied.",
+        "Au sommet du pied, élargis d'un anneau puis construis le chapeau en dôme sur 9×9, couche par couche, en red_terracotta.",
+        "Parsème le dessus du chapeau de points en white_wool et adoucis le rebord avec une bordure en red_wool qui retombe légèrement.",
+        "Sous le chapeau, installe un plancher de birch_planks et une petite terrasse ceinturée d'oak_fence avec des birch_trapdoor rabattables.",
+        "Tapisse l'intérieur du pied de moss_carpet, ajoute un lit, un coin rangement et éclaire avec des lantern suspendues.",
+        "Décore les abords avec des flower_pot et quelques champignons plantés pour prolonger l'ambiance de conte."
+      ],
+      "en": [
+        "Draw a 7-block-diameter circle and raise the mushroom stem 5 blocks high in bone_block, letting it bulge slightly.",
+        "Cut a birch_door at the front and two small round glass_pane windows on the sides of the stem.",
+        "At the top of the stem, widen by one ring, then build the cap as a 9×9 dome, layer by layer, in red_terracotta.",
+        "Speckle the top of the cap with white_wool spots and soften the rim with a red_wool border that droops slightly.",
+        "Under the cap, lay a birch_planks floor and a small porch ringed with oak_fence and hinged birch_trapdoor.",
+        "Carpet the stem interior with moss_carpet, add a bed and a storage corner, and light it with hanging lantern.",
+        "Decorate the surroundings with flower_pot and a few planted mushrooms to extend the storybook mood."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Construis le dôme du chapeau du bas vers le haut en réduisant le diamètre à chaque couche : monte un anneau de contour avant de le remplir, c'est plus facile à corriger.",
+        "Place les points blancs de white_wool de façon irrégulière, jamais alignés : un semis aléatoire rend le champignon bien plus crédible.",
+        "Le débord du chapeau plonge la terrasse dans l'ombre, alors n'oublie pas quelques lantern dessous pour éviter que des mobs y apparaissent la nuit."
+      ],
+      "en": [
+        "Build the cap dome bottom to top, shrinking the diameter each layer: raise an outline ring before filling it, it's far easier to fix.",
+        "Scatter the white_wool spots irregularly, never in a grid: a random spread makes the mushroom read as far more believable.",
+        "The cap's overhang keeps the porch in shadow, so don't forget a few lantern underneath to stop mobs spawning there at night."
+      ]
+    },
+    "category": "living",
+    "videoId": "lC6aLw5IZ1g"
   },
   {
     "id": "farmstead_potager_starter",
@@ -715,7 +1051,8 @@ window.BUILDINGS = [
         "Alternate crops (golden wheat, red beets) to create a pleasing checkerboard of colour."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "D_66YDXZ0A4"
   },
   {
     "id": "farmstead_chicken_coop",
@@ -817,7 +1154,8 @@ window.BUILDINGS = [
         "Wooden trapdoors make great low perches and break up the flat plank walls."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "-noyczWaOM8"
   },
   {
     "id": "farmstead_barn",
@@ -923,7 +1261,8 @@ window.BUILDINGS = [
         "Add a small vented cupola at the top of the gable to crown the silhouette and let the loft breathe."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "q3hSw5VBuqg"
   },
   {
     "id": "farmstead_greenhouse",
@@ -1029,7 +1368,8 @@ window.BUILDINGS = [
         "Mix solid glass with glass_pane on the walls: the change in thickness adds depth to the facade."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "PaBA0zduG58"
   },
   {
     "id": "farmstead_windmill",
@@ -1131,7 +1471,8 @@ window.BUILDINGS = [
         "Let the wooden cap overhang the stone slightly: that drop shadow strengthens the whole silhouette."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "tL1TJIVKs8M"
   },
   {
     "id": "farmstead_grain_silo",
@@ -1237,7 +1578,326 @@ window.BUILDINGS = [
         "Face the pen and its gate toward the house to form a natural courtyard and a logical flow through the farm."
       ]
     },
-    "category": "farmstead"
+    "category": "farmstead",
+    "videoId": "KGVsT-LFRGs"
+  },
+  {
+    "id": "farmstead_flowering_apiary",
+    "emoji": "🐝",
+    "difficulty": "Easy",
+    "tags": [
+      "bees",
+      "honey",
+      "garden"
+    ],
+    "name": {
+      "fr": "Rucher Fleuri",
+      "en": "Flowering Apiary"
+    },
+    "style": {
+      "fr": "Rustique doré",
+      "en": "Golden rustic"
+    },
+    "size": {
+      "fr": "7×5",
+      "en": "7×5"
+    },
+    "description": {
+      "fr": "Un petit rucher baigné de soleil, entouré de fleurs, où les abeilles butinent et remplissent les ruches de miel. Un abri de bouleau protège les ruches du vent, et un feu de camp discret permet de récolter le miel sans se faire piquer. Parfait pour ajouter une touche vivante et parfumée à votre ferme.",
+      "en": "A small sun-soaked apiary ringed with flowers, where bees forage and fill the hives with honey. A birch shelter shields the hives from the wind, and a discreet campfire lets you harvest honey without getting stung. Perfect for adding a lively, fragrant corner to your farm."
+    },
+    "materials": [
+      {
+        "item": "birch_log",
+        "qty": 12
+      },
+      {
+        "item": "birch_planks",
+        "qty": 20
+      },
+      {
+        "item": "birch_slab",
+        "qty": 10
+      },
+      {
+        "item": "honeycomb_block",
+        "qty": 6
+      },
+      {
+        "item": "beehive",
+        "qty": 5
+      },
+      {
+        "item": "oak_fence",
+        "qty": 16
+      },
+      {
+        "item": "flower_pot",
+        "qty": 6
+      },
+      {
+        "item": "lantern",
+        "qty": 4
+      },
+      {
+        "item": "campfire",
+        "qty": 1
+      },
+      {
+        "item": "barrel",
+        "qty": 3
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Délimitez la parcelle de 7×5 avec des oak_fence en laissant une ouverture pour entrer.",
+        "Montez une estrade basse en birch_slab pour surélever les ruches du sol humide.",
+        "Disposez les 5 beehive sur l'estrade, bien espacées pour laisser passer les abeilles.",
+        "Dressez des poteaux d'angle en birch_log et un mur coupe-vent en birch_planks à l'arrière.",
+        "Placez un campfire au sol sous le niveau des ruches pour calmer les abeilles à la récolte.",
+        "Habillez les bords avec des honeycomb_block et alignez des flower_pot fleuris.",
+        "Suspendez des lantern pour la lumière et posez 3 barrel pour stocker miel et rayons."
+      ],
+      "en": [
+        "Mark out the 7×5 plot with oak_fence, leaving one gap as an entrance.",
+        "Build a low birch_slab platform to lift the hives off the damp ground.",
+        "Set the 5 beehive on the platform, well spaced so bees can come and go.",
+        "Raise birch_log corner posts and a birch_planks windbreak wall at the back.",
+        "Place a campfire on the ground below hive level to calm bees while harvesting.",
+        "Trim the edges with honeycomb_block and line up flowering flower_pot.",
+        "Hang lantern for light and add 3 barrel to store honey and combs."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Un campfire dans un rayon de 5 blocs sous une ruche calme les abeilles : récoltez le miel sans les mettre en colère.",
+        "Entourez le rucher de fleurs variées pour que les abeilles restent productives et repollinisent.",
+        "Le honeycomb_block donne des accents dorés qui renforcent le thème miel."
+      ],
+      "en": [
+        "A campfire within 5 blocks below a hive calms the bees: harvest honey without angering them.",
+        "Surround the apiary with varied flowers to keep bees productive and repollinating.",
+        "Honeycomb_block adds warm golden accents that reinforce the honey theme."
+      ]
+    },
+    "category": "farmstead",
+    "videoId": "a4UBcw97GtY"
+  },
+  {
+    "id": "farmstead_horse_stable",
+    "emoji": "🐴",
+    "difficulty": "Medium",
+    "tags": [
+      "horse",
+      "stable",
+      "pen"
+    ],
+    "name": {
+      "fr": "Écurie en Charpente",
+      "en": "Timber Horse Stable"
+    },
+    "style": {
+      "fr": "Charpente rustique",
+      "en": "Rustic timber"
+    },
+    "size": {
+      "fr": "11×7",
+      "en": "11×7"
+    },
+    "description": {
+      "fr": "Une écurie de charpente aux stalles individuelles, avec des demi-portes par lesquelles les chevaux passent la tête. Un grenier à foin coiffe le bâtiment et un paddock clôturé permet aux montures de se dégourdir. Solide, chaleureuse et fonctionnelle pour tout éleveur de chevaux.",
+      "en": "A timber-framed stable with individual stalls and half-doors the horses can poke their heads over. A hay loft crowns the building and a fenced paddock lets the mounts stretch their legs. Sturdy, warm and functional for any horse breeder."
+    },
+    "materials": [
+      {
+        "item": "dark_oak_log",
+        "qty": 24
+      },
+      {
+        "item": "spruce_planks",
+        "qty": 30
+      },
+      {
+        "item": "spruce_slab",
+        "qty": 14
+      },
+      {
+        "item": "spruce_stairs",
+        "qty": 12
+      },
+      {
+        "item": "dark_oak_trapdoor",
+        "qty": 8
+      },
+      {
+        "item": "spruce_fence",
+        "qty": 20
+      },
+      {
+        "item": "spruce_fence_gate",
+        "qty": 3
+      },
+      {
+        "item": "hay_block",
+        "qty": 9
+      },
+      {
+        "item": "lantern",
+        "qty": 5
+      },
+      {
+        "item": "chest",
+        "qty": 2
+      },
+      {
+        "item": "ladder",
+        "qty": 4
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Tracez un rectangle de 11×7 et plantez les poteaux d'angle et intermédiaires en dark_oak_log.",
+        "Remplissez les murs entre les poteaux avec des spruce_planks.",
+        "Séparez l'intérieur en stalles avec des spruce_fence, chacune fermée par un dark_oak_trapdoor en demi-porte.",
+        "Déposez un hay_block dans chaque stalle en guise de litière et de fourrage.",
+        "Coiffez le tout d'un toit en pente fait de spruce_stairs et de spruce_slab.",
+        "Aménagez un grenier à foin accessible par une ladder et éclairé par des lantern.",
+        "Clôturez un paddock extérieur avec spruce_fence et spruce_fence_gate, puis posez 2 chest pour selles et harnais."
+      ],
+      "en": [
+        "Lay out an 11×7 rectangle and raise dark_oak_log corner and mid posts.",
+        "Fill the walls between the posts with spruce_planks.",
+        "Divide the interior into stalls with spruce_fence, each closed by a dark_oak_trapdoor half-door.",
+        "Drop a hay_block in every stall as bedding and feed.",
+        "Cap it with a pitched roof of spruce_stairs and spruce_slab.",
+        "Fit out a hay loft reached by a ladder and lit with lantern.",
+        "Fence an outdoor paddock with spruce_fence and spruce_fence_gate, then set 2 chest for saddles and tack."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Utilisez les dark_oak_trapdoor comme demi-portes battantes pour que les chevaux passent la tête au-dessus.",
+        "Gardez chaque stalle sur au moins 3 blocs de large pour que les chevaux ne s'étouffent pas dans les coins.",
+        "Éclairez le foin avec des lantern : le hay_block est inflammable, mais surtout ça empêche les monstres d'apparaître."
+      ],
+      "en": [
+        "Use the dark_oak_trapdoor as swinging half-doors so horses can peek their heads over.",
+        "Keep each stall at least 3 blocks wide so horses don't suffocate in the corners.",
+        "Light the hay with lantern: hay_block is flammable, but mainly it stops mobs from spawning."
+      ]
+    },
+    "category": "farmstead",
+    "videoId": "23YxsNSXv8A"
+  },
+  {
+    "id": "farmstead_terraced_paddies",
+    "emoji": "🌾",
+    "difficulty": "Hard",
+    "tags": [
+      "fields",
+      "water",
+      "terrace"
+    ],
+    "name": {
+      "fr": "Rizières en Terrasses",
+      "en": "Terraced Paddy Fields"
+    },
+    "style": {
+      "fr": "Terrasses inondées",
+      "en": "Flooded terraces"
+    },
+    "size": {
+      "fr": "15×15",
+      "en": "15×15"
+    },
+    "description": {
+      "fr": "Un flanc de colline sculpté en terrasses agricoles descendantes, irriguées par un canal central et retenues par des murets de boue et de briques. Chaque niveau accueille des cultures hydratées, bordées de cannes à sucre au fil de l'eau. Un projet ambitieux qui transforme un relief en paysage nourricier spectaculaire.",
+      "en": "A hillside carved into descending farm terraces, irrigated by a central channel and held back by walls of mud and brick. Each level holds hydrated crops, edged with sugar cane along the waterline. An ambitious project that turns a slope into a striking, productive landscape."
+    },
+    "materials": [
+      {
+        "item": "mud",
+        "qty": 30
+      },
+      {
+        "item": "packed_mud",
+        "qty": 24
+      },
+      {
+        "item": "mud_bricks",
+        "qty": 20
+      },
+      {
+        "item": "mud_brick_stairs",
+        "qty": 12
+      },
+      {
+        "item": "stone_bricks",
+        "qty": 16
+      },
+      {
+        "item": "cobblestone_wall",
+        "qty": 18
+      },
+      {
+        "item": "water_bucket",
+        "qty": 1
+      },
+      {
+        "item": "dirt",
+        "qty": 40
+      },
+      {
+        "item": "coarse_dirt",
+        "qty": 12
+      },
+      {
+        "item": "oak_fence",
+        "qty": 10
+      },
+      {
+        "item": "bamboo",
+        "qty": 8
+      },
+      {
+        "item": "sugar_cane",
+        "qty": 12
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Montez des murs de soutènement en packed_mud et mud_bricks à trois hauteurs décroissantes pour former les terrasses.",
+        "Coiffez le rebord de chaque muret de mud_brick_stairs pour un profil incliné et net.",
+        "Comblez chaque niveau avec de la dirt, puis labourez le dessus en terres cultivées.",
+        "Creusez un canal central et versez le water_bucket pour que chaque parcelle reste à moins de 4 blocs de l'eau.",
+        "Bordez le canal de stone_bricks et de cobblestone_wall pour un aqueduc en escalier.",
+        "Plantez des sugar_cane le long de l'eau et vos cultures dans les terres labourées.",
+        "Posez des garde-corps en oak_fence et plantez des bamboo comme repères le long des sentiers entre les niveaux."
+      ],
+      "en": [
+        "Raise retaining walls of packed_mud and mud_bricks at three descending heights to form the terraces.",
+        "Cap each wall's edge with mud_brick_stairs for a clean sloped profile.",
+        "Fill every level with dirt, then till the top into farmland.",
+        "Dig a central channel and pour the water_bucket so every plot stays within 4 blocks of water.",
+        "Line the channel with stone_bricks and cobblestone_wall as a stepped aqueduct.",
+        "Plant sugar_cane along the waterline and your crops in the tilled farmland.",
+        "Add oak_fence handrails and bamboo markers along the footpaths between levels."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Gardez chaque bloc labouré à 4 blocs maximum (à l'horizontale) d'une source d'eau pour qu'il reste hydraté.",
+        "Construisez de la terrasse la plus basse vers la plus haute : vous pouvez ainsi vous tenir sur les niveaux finis en empilant la boue.",
+        "Alternez mud, packed_mud et coarse_dirt pour donner de la texture aux terrasses et éviter un rendu plat et répétitif."
+      ],
+      "en": [
+        "Keep every tilled block within 4 blocks (horizontally) of a water source so it stays hydrated.",
+        "Build from the lowest terrace up so you can stand on finished levels while stacking the mud.",
+        "Mix mud, packed_mud and coarse_dirt to texture the terraces and avoid a flat, repetitive look."
+      ]
+    },
+    "category": "farmstead",
+    "videoId": "UZukaxnLiVw"
   },
   {
     "id": "utility_rustic_storage_shed",
@@ -1336,7 +1996,8 @@ window.BUILDINGS = [
         "Raise the shed one block on slabs to keep a clean threshold and stop grass creeping in."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "Ge2GsZATyq0"
   },
   {
     "id": "utility_blackstone_smithy",
@@ -1442,7 +2103,8 @@ window.BUILDINGS = [
         "Break up the dominant black with dark_oak_log and chain to warm the palette."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "Wg7XIrHU_RY"
   },
   {
     "id": "utility_arcane_brewing_corner",
@@ -1548,7 +2210,8 @@ window.BUILDINGS = [
         "Blend amethyst_block into the deepslate_bricks for subtle violet accents without overdoing it."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "r5-SXtBT4as"
   },
   {
     "id": "utility_spruce_potting_toolroom",
@@ -1650,7 +2313,8 @@ window.BUILDINGS = [
         "Surround the shed with a few crops and a dirt path to root it in the landscape."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "p4ulcvYJt6s"
   },
   {
     "id": "utility_copper_artisan_workshop",
@@ -1756,7 +2420,8 @@ window.BUILDINGS = [
         "A ribbon of cut_copper_stairs as a cornice gives the flat roof a clean industrial finish."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "tSHGkPMbPW8"
   },
   {
     "id": "utility_deepslate_storage_vault",
@@ -1862,7 +2527,336 @@ window.BUILDINGS = [
         "Punctuate long deepslate walls with polished_deepslate pilasters to avoid a flat bunker look."
       ]
     },
-    "category": "utility"
+    "category": "utility",
+    "videoId": "l1TdW9yNqIE"
+  },
+  {
+    "id": "utility_cartographers_workshop",
+    "emoji": "🗺️",
+    "difficulty": "Medium",
+    "tags": [
+      "nautical",
+      "maps",
+      "storage"
+    ],
+    "name": {
+      "fr": "Atelier du Cartographe",
+      "en": "Cartographer's Workshop"
+    },
+    "style": {
+      "fr": "Maritime",
+      "en": "Nautical"
+    },
+    "size": {
+      "fr": "9×7",
+      "en": "9×7"
+    },
+    "description": {
+      "fr": "Un atelier au bord de l'eau pour l'explorateur des mers, conçu pour dessiner, ranger et exposer les cartes. La prismarine et l'épicéa lui donnent une ambiance de port paisible, avec un mur de cartes encadrées derrière la table de cartographie.",
+      "en": "A waterside workshop for the sea-going explorer, built to draw, store and display maps. Prismarine and spruce give it a calm harbour feel, with a chart wall of framed maps behind the cartography table."
+    },
+    "materials": [
+      {
+        "item": "dark_prismarine",
+        "qty": 63
+      },
+      {
+        "item": "prismarine_bricks",
+        "qty": 90
+      },
+      {
+        "item": "prismarine",
+        "qty": 24
+      },
+      {
+        "item": "sea_lantern",
+        "qty": 8
+      },
+      {
+        "item": "spruce_log",
+        "qty": 20
+      },
+      {
+        "item": "spruce_planks",
+        "qty": 40
+      },
+      {
+        "item": "spruce_stairs",
+        "qty": 45
+      },
+      {
+        "item": "cartography_table",
+        "qty": 1
+      },
+      {
+        "item": "lectern",
+        "qty": 1
+      },
+      {
+        "item": "barrel",
+        "qty": 6
+      },
+      {
+        "item": "glass_pane",
+        "qty": 12
+      },
+      {
+        "item": "item_frame",
+        "qty": 6
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Posez un sol de 9×7 en dark_prismarine et tracez la ligne des murs un bloc vers l'intérieur.",
+        "Dressez les poteaux d'angle en spruce_log puis montez les murs en prismarine_bricks jusqu'à hauteur de tête.",
+        "Rythmez le haut des murs avec des accents en prismarine et des fenêtres en glass_pane tournées vers l'eau.",
+        "Ajoutez un toit en pente avec des spruce_stairs et coiffez le faîtage de spruce_slab appuyées sur des spruce_planks.",
+        "Encastrez des sea_lantern sous les avant-toits et près de la porte pour une lumière douce.",
+        "Le long du mur du fond, alignez une cartography_table, un lectern et une rangée de barrel.",
+        "Habillez le mur latéral d'item_frame contenant des cartes pour créer un mur de plans."
+      ],
+      "en": [
+        "Lay a 9×7 floor of dark_prismarine and mark the wall line one block in.",
+        "Raise the corner posts with spruce_log, then fill the walls with prismarine_bricks up to head height.",
+        "Break up the upper walls with prismarine accents and glass_pane windows facing the water.",
+        "Add a sloped roof of spruce_stairs and cap the ridge with spruce_slab over spruce_planks.",
+        "Inset sea_lantern blocks under the eaves and beside the door for a soft glow.",
+        "Along the back wall, line up a cartography_table, a lectern and a row of barrels.",
+        "Cover the side wall with item_frame maps to build a chart wall."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Placez l'atelier directement sur un ponton au bord de l'océan : les cartes se remplissent en explorant depuis la porte.",
+        "Les sea_lantern donnent une lumière franche sans torches, plus propre pour un décor maritime.",
+        "Numérotez les cartes dans les item_frame par zone pour retrouver vos coordonnées d'un coup d'œil."
+      ],
+      "en": [
+        "Set the workshop on a dock at the ocean's edge so maps fill in as you explore straight from the door.",
+        "Sea lanterns give clean light without torches, which suits the maritime look better.",
+        "Arrange the framed maps by region so you can spot the right coordinates at a glance."
+      ]
+    },
+    "category": "utility",
+    "videoId": "DDlSMaNIci4"
+  },
+  {
+    "id": "utility_desert_caravan_warehouse",
+    "emoji": "🏜️",
+    "difficulty": "Easy",
+    "tags": [
+      "desert",
+      "warehouse",
+      "storage"
+    ],
+    "name": {
+      "fr": "Entrepôt de la Caravane",
+      "en": "Caravan Warehouse"
+    },
+    "style": {
+      "fr": "Comptoir désertique",
+      "en": "Desert Trading Post"
+    },
+    "size": {
+      "fr": "11×9",
+      "en": "11×9"
+    },
+    "description": {
+      "fr": "Une grande grange de stockage ouverte, dans le style d'un comptoir du désert. Des murs de grès rehaussés de bandes de terre cuite abritent des rangées de tonneaux et de coffres, avec des balles de foin et des pots décorés empilés comme des marchandises de caravane.",
+      "en": "A big, open storage barn styled like a desert trading post. Sandstone walls with terracotta banding hold rows of barrels and chests, with hay bales and decorated pots stacked like caravan freight."
+    },
+    "materials": [
+      {
+        "item": "smooth_sandstone",
+        "qty": 99
+      },
+      {
+        "item": "cut_sandstone",
+        "qty": 80
+      },
+      {
+        "item": "sandstone_stairs",
+        "qty": 40
+      },
+      {
+        "item": "orange_terracotta",
+        "qty": 24
+      },
+      {
+        "item": "brown_terracotta",
+        "qty": 20
+      },
+      {
+        "item": "hay_block",
+        "qty": 18
+      },
+      {
+        "item": "barrel",
+        "qty": 12
+      },
+      {
+        "item": "chest",
+        "qty": 10
+      },
+      {
+        "item": "acacia_log",
+        "qty": 12
+      },
+      {
+        "item": "acacia_fence",
+        "qty": 10
+      },
+      {
+        "item": "decorated_pot",
+        "qty": 4
+      },
+      {
+        "item": "lantern",
+        "qty": 6
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Coulez une fondation de 11×9 en smooth_sandstone bien de niveau sur le sable.",
+        "Montez les murs en cut_sandstone et intercalez des bandes d'orange_terracotta et de brown_terracotta à mi-hauteur.",
+        "Encadrez la large ouverture d'entrée avec des poteaux en acacia_log et un garde-corps en acacia_fence.",
+        "À l'intérieur, empilez des hay_block et alignez les rangées de barrel et de chest par ressource.",
+        "Faites courir une corniche en sandstone_stairs tout autour du sommet pour un toit plat à débord.",
+        "Disposez des decorated_pot près de l'entrée et suspendez des lantern aux poteaux d'acacia."
+      ],
+      "en": [
+        "Pour an 11×9 foundation of smooth_sandstone, kept level over the sand.",
+        "Raise the walls in cut_sandstone and run bands of orange_terracotta and brown_terracotta at mid-height.",
+        "Frame the wide entrance with acacia_log posts and an acacia_fence railing.",
+        "Inside, stack hay_block bales and line up rows of barrel and chest sorted by resource.",
+        "Run a cornice of sandstone_stairs around the top for a flat, overhanging roof edge.",
+        "Set decorated_pot near the entrance and hang lantern on the acacia posts."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Groupez le stockage par thème (minerais, nourriture, blocs) sur des allées séparées pour circuler vite.",
+        "Les bandes de terre cuite cassent la monotonie du grès sans coûter de blocs rares.",
+        "Laissez un débord de toit d'un bloc : il ombre l'entrée et renforce l'allure de comptoir."
+      ],
+      "en": [
+        "Group storage by theme (ores, food, blocks) on separate aisles so you can move fast.",
+        "The terracotta bands break up the sandstone monotony without needing rare blocks.",
+        "Leave a one-block roof overhang: it shades the entrance and sells the trading-post look."
+      ]
+    },
+    "category": "utility",
+    "videoId": "vFuZLZCZfS8"
+  },
+  {
+    "id": "utility_arcane_enchanting_study",
+    "emoji": "🔮",
+    "difficulty": "Hard",
+    "tags": [
+      "enchanting",
+      "library",
+      "arcane"
+    ],
+    "name": {
+      "fr": "Cabinet d'Enchantement",
+      "en": "Arcane Enchanting Study"
+    },
+    "style": {
+      "fr": "Arcane lumineux",
+      "en": "Luminous Arcane"
+    },
+    "size": {
+      "fr": "7×7",
+      "en": "7×7"
+    },
+    "description": {
+      "fr": "Un cabinet d'enchantement compact et lumineux, habillé de quartz et d'améthyste. Un anneau complet de bibliothèques porte la table d'enchantement au niveau maximal, tandis qu'un coin lutrin garde vos livres de référence à portée de main.",
+      "en": "A compact, luminous enchanting study wrapped in quartz and amethyst. A full ring of bookshelves powers the enchanting table to the highest level, while a lectern nook keeps your reference books close."
+    },
+    "materials": [
+      {
+        "item": "smooth_quartz",
+        "qty": 49
+      },
+      {
+        "item": "quartz_bricks",
+        "qty": 70
+      },
+      {
+        "item": "quartz_stairs",
+        "qty": 24
+      },
+      {
+        "item": "quartz_slab",
+        "qty": 24
+      },
+      {
+        "item": "amethyst_block",
+        "qty": 12
+      },
+      {
+        "item": "purpur_block",
+        "qty": 12
+      },
+      {
+        "item": "bookshelf",
+        "qty": 15
+      },
+      {
+        "item": "chiseled_bookshelf",
+        "qty": 2
+      },
+      {
+        "item": "lectern",
+        "qty": 1
+      },
+      {
+        "item": "end_rod",
+        "qty": 4
+      },
+      {
+        "item": "purple_stained_glass_pane",
+        "qty": 8
+      },
+      {
+        "item": "candle",
+        "qty": 4
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Posez un sol de 7×7 en smooth_quartz cerné d'une bordure de quartz_slab.",
+        "Montez les murs en quartz_bricks et marquez les quatre angles avec des colonnes de purpur_block.",
+        "Réservez un espace central de 5×5 et entourez-le complètement de bookshelf pour porter la table d'enchantement au niveau 30.",
+        "Aménagez un coin lecture avec un lectern et deux chiseled_bookshelf pour les livres en réserve.",
+        "Insérez des accents en amethyst_block dans les murs et couronnez le tout d'une corniche en quartz_stairs.",
+        "Éclairez la pièce avec des end_rod au plafond et des candle posées sur les étagères.",
+        "Vitrez les fenêtres avec du purple_stained_glass_pane pour une teinte mystique."
+      ],
+      "en": [
+        "Lay a 7×7 floor of smooth_quartz with a quartz_slab border.",
+        "Raise walls of quartz_bricks and mark the four corners with purpur_block columns.",
+        "Leave a central 5×5 open space and ring it fully with bookshelf so the enchanting table reaches level 30.",
+        "Build a reading nook with a lectern and two chiseled_bookshelf for spare books.",
+        "Set amethyst_block accents into the walls and crown everything with a quartz_stairs cornice.",
+        "Light the room with end_rod on the ceiling and candle on the shelves.",
+        "Glaze the windows with purple_stained_glass_pane for a mystic tint."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Il faut 15 bibliothèques bien placées autour de la table pour atteindre le niveau 30 d'enchantement.",
+        "Laissez exactement un bloc d'air entre la table et chaque bibliothèque, sinon le bonus ne compte pas.",
+        "Gardez la palette quartz-améthyste claire : l'end_rod suffit à l'éclairage sans casser l'ambiance arcane."
+      ],
+      "en": [
+        "You need 15 correctly placed bookshelves around the table to reach enchant level 30.",
+        "Leave exactly one air block between the table and each bookshelf, or the bonus won't count.",
+        "Keep the quartz-amethyst palette bright: end rods alone light it without breaking the arcane mood."
+      ]
+    },
+    "category": "utility",
+    "videoId": "Uppl2Wt9Tsw"
   },
   {
     "id": "passage_rustic_log_footbridge",
@@ -1946,7 +2940,8 @@ window.BUILDINGS = [
         "Set a few spruce_trapdoor along the sides at water level to mimic submerged bracing."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "9IBZ8mblSZI"
   },
   {
     "id": "passage_stone_arch_bridge",
@@ -2036,7 +3031,8 @@ window.BUILDINGS = [
         "Align the crown of the arch with the exact center of the bridge to keep perfect symmetry."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "yCAUmbf64o4"
   },
   {
     "id": "passage_lakeside_pier",
@@ -2128,7 +3124,8 @@ window.BUILDINGS = [
         "A lantern at the very end of the pier reflects beautifully on the water at night."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "MRWL9YSajqM"
   },
   {
     "id": "passage_covered_skybridge",
@@ -2218,7 +3215,8 @@ window.BUILDINGS = [
         "Keep the pillars perfectly aligned: up high, the smallest offset shows from far away."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "xzKwAtOgH6M"
   },
   {
     "id": "passage_desert_gateway_arch",
@@ -2312,7 +3310,8 @@ window.BUILDINGS = [
         "Add sand and a few dunes at the foot of the gate to root it in the landscape."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "Vt0k1LpteBA"
   },
   {
     "id": "passage_cherry_garden_path",
@@ -2410,7 +3409,310 @@ window.BUILDINGS = [
         "Plant a few cherry trees on either side to extend the arch into the landscape."
       ]
     },
-    "category": "passage"
+    "category": "passage",
+    "videoId": "44eF5JPxVyE"
+  },
+  {
+    "id": "passage_jungle_suspension_bridge",
+    "emoji": "🌉",
+    "difficulty": "Medium",
+    "tags": [
+      "bridge",
+      "jungle",
+      "canyon"
+    ],
+    "name": {
+      "fr": "Pont suspendu de la jungle",
+      "en": "Jungle Rope Suspension Bridge"
+    },
+    "style": {
+      "fr": "Aventure tropicale",
+      "en": "Tropical adventure"
+    },
+    "size": {
+      "fr": "15×3",
+      "en": "15×3"
+    },
+    "description": {
+      "fr": "Un pont de cordes qui enjambe un ravin, son tablier en planches de jungle suspendu à des chaînes. Parfait pour relier deux falaises sans combler le vide en dessous.",
+      "en": "A rope bridge spanning a ravine, its jungle-plank deck slung from chains. Perfect for linking two cliffs without filling the gap below."
+    },
+    "materials": [
+      {
+        "item": "jungle_log",
+        "qty": 16
+      },
+      {
+        "item": "jungle_planks",
+        "qty": 64
+      },
+      {
+        "item": "jungle_slab",
+        "qty": 24
+      },
+      {
+        "item": "jungle_stairs",
+        "qty": 12
+      },
+      {
+        "item": "jungle_fence",
+        "qty": 40
+      },
+      {
+        "item": "jungle_trapdoor",
+        "qty": 24
+      },
+      {
+        "item": "jungle_fence_gate",
+        "qty": 2
+      },
+      {
+        "item": "chain",
+        "qty": 40
+      },
+      {
+        "item": "lantern",
+        "qty": 6
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Plantez deux tours d'ancrage en rondins de jungle (jungle_log) de chaque côté du ravin, sur 4 blocs de haut.",
+        "Tendez deux lignes de chaînes (chain) d'une tour à l'autre pour figurer les câbles porteurs du pont.",
+        "Posez le tablier en planches de jungle (jungle_planks) sur toute la longueur, large de deux blocs.",
+        "Bordez le tablier de barrières de jungle (jungle_fence) reliées par des chaînes en guise de garde-corps.",
+        "Adoucissez les accès avec des dalles de jungle (jungle_slab) et des escaliers de jungle (jungle_stairs) aux deux extrémités.",
+        "Fixez des trappes de jungle (jungle_trapdoor) sous le rebord du tablier pour un effet de planches usées.",
+        "Accrochez des lanternes (lantern) tous les quatre blocs et fermez les entrées de portillons de jungle (jungle_fence_gate)."
+      ],
+      "en": [
+        "Raise two anchor towers of jungle logs (jungle_log) on each side of the ravine, 4 blocks tall.",
+        "Run two lines of chains (chain) from tower to tower to stand in for the load-bearing cables.",
+        "Lay the deck in jungle planks (jungle_planks) across the full span, two blocks wide.",
+        "Edge the deck with jungle fences (jungle_fence) linked by chains as a handrail.",
+        "Ease the approaches with jungle slabs (jungle_slab) and jungle stairs (jungle_stairs) at both ends.",
+        "Fix jungle trapdoors (jungle_trapdoor) under the deck lip for a worn-plank look.",
+        "Hang lanterns (lantern) every four blocks and close the entries with jungle fence gates (jungle_fence_gate)."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Faites légèrement retomber les chaînes au centre du pont pour imiter l'affaissement naturel d'un vrai pont de cordes.",
+        "Un tablier de deux blocs de large se traverse sans tomber ; réservez la largeur d'un bloc aux passages très escarpés.",
+        "Enfoncez les rondins d'ancrage dans la roche des falaises pour que le pont paraisse réellement arrimé."
+      ],
+      "en": [
+        "Let the chains sag slightly at the center to mimic the natural droop of a real rope bridge.",
+        "A two-block-wide deck is easy to cross without falling; save one-block widths for the steepest crossings.",
+        "Sink the anchor logs into the cliff rock so the bridge looks genuinely moored."
+      ]
+    },
+    "category": "passage",
+    "videoId": "qKfpPqVQwSM"
+  },
+  {
+    "id": "passage_fortified_gatehouse",
+    "emoji": "🏰",
+    "difficulty": "Hard",
+    "tags": [
+      "castle",
+      "gateway",
+      "defense"
+    ],
+    "name": {
+      "fr": "Corps de garde fortifié",
+      "en": "Fortified Gatehouse"
+    },
+    "style": {
+      "fr": "Médiéval défensif",
+      "en": "Medieval fortress"
+    },
+    "size": {
+      "fr": "11×9",
+      "en": "11×9"
+    },
+    "description": {
+      "fr": "Une porte de château flanquée de deux tours, avec herse relevable et pont-levis en bois franchissant les douves. L'entrée imposante idéale pour une enceinte fortifiée.",
+      "en": "A castle gate flanked by two towers, with a raising portcullis and a timber drawbridge crossing the moat. The imposing entrance a walled keep deserves."
+    },
+    "materials": [
+      {
+        "item": "stone_bricks",
+        "qty": 128
+      },
+      {
+        "item": "stone_brick_stairs",
+        "qty": 32
+      },
+      {
+        "item": "stone_brick_wall",
+        "qty": 24
+      },
+      {
+        "item": "blackstone",
+        "qty": 32
+      },
+      {
+        "item": "polished_blackstone",
+        "qty": 16
+      },
+      {
+        "item": "iron_bars",
+        "qty": 12
+      },
+      {
+        "item": "spruce_planks",
+        "qty": 24
+      },
+      {
+        "item": "spruce_trapdoor",
+        "qty": 8
+      },
+      {
+        "item": "chain",
+        "qty": 12
+      },
+      {
+        "item": "lantern",
+        "qty": 8
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Montez deux tours carrées en briques de pierre (stone_bricks) de part et d'autre du passage, sur 6 blocs de haut.",
+        "Reliez-les par une arche et un chemin de ronde bordé de murets en briques de pierre (stone_brick_wall).",
+        "Percez le passage central et installez une herse en barreaux de fer (iron_bars) que l'on peut relever.",
+        "Construisez le pont-levis en planches d'épicéa (spruce_planks) et trappes d'épicéa (spruce_trapdoor) au-dessus des douves.",
+        "Tendez deux chaînes (chain) de la façade jusqu'au tablier pour figurer le mécanisme de levage.",
+        "Soulignez la base et les créneaux avec de la pierre noire (blackstone) et du blackstone poli (polished_blackstone).",
+        "Coiffez les tours d'escaliers en briques de pierre (stone_brick_stairs) et encadrez la porte de lanternes (lantern)."
+      ],
+      "en": [
+        "Raise two square towers of stone bricks (stone_bricks) on either side of the passage, 6 blocks tall.",
+        "Join them with an arch and a wall-walk edged in stone brick walls (stone_brick_wall).",
+        "Cut the central passage and fit a raising portcullis of iron bars (iron_bars).",
+        "Build the drawbridge in spruce planks (spruce_planks) and spruce trapdoors (spruce_trapdoor) over the moat.",
+        "Run two chains (chain) from the facade down to the deck to suggest the lifting mechanism.",
+        "Accent the base and battlements with blackstone (blackstone) and polished blackstone (polished_blackstone).",
+        "Cap the towers with stone brick stairs (stone_brick_stairs) and frame the gate with lanterns (lantern)."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Un vrai pont-levis se fait avec des trappes posées côté douves : elles pivotent à la verticale pour 'fermer' le passage.",
+        "Alternez briques de pierre et blackstone sur les arêtes pour donner du relief et casser la monotonie du gris.",
+        "Avancez le chemin de ronde d'un bloc au-dessus de la porte pour créer des mâchicoulis crédibles."
+      ],
+      "en": [
+        "A convincing drawbridge uses trapdoors hinged on the moat side; they swing vertical to 'close' the passage.",
+        "Alternate stone bricks and blackstone along the edges to add depth and break up the flat grey.",
+        "Overhang the wall-walk by one block above the gate to create believable machicolations."
+      ]
+    },
+    "category": "passage",
+    "videoId": "gQEt6DThfhY"
+  },
+  {
+    "id": "passage_deepslate_catacomb",
+    "emoji": "🕯️",
+    "difficulty": "Medium",
+    "tags": [
+      "underground",
+      "tunnel",
+      "crypt"
+    ],
+    "name": {
+      "fr": "Passage des catacombes",
+      "en": "Deepslate Catacomb Passage"
+    },
+    "style": {
+      "fr": "Crypte souterraine",
+      "en": "Underground crypt"
+    },
+    "size": {
+      "fr": "13×5",
+      "en": "13×5"
+    },
+    "description": {
+      "fr": "Un couloir voûté taillé dans la roche, éclairé de lanternes des âmes et bordé d'alcôves grillagées. Le passage souterrain parfait pour relier deux salles ou descendre vers un tombeau.",
+      "en": "A vaulted corridor carved into the rock, lit by soul lanterns and lined with barred alcoves. The underground passage perfect for linking two rooms or descending toward a tomb."
+    },
+    "materials": [
+      {
+        "item": "deepslate_bricks",
+        "qty": 128
+      },
+      {
+        "item": "deepslate_brick_stairs",
+        "qty": 32
+      },
+      {
+        "item": "deepslate_brick_slab",
+        "qty": 24
+      },
+      {
+        "item": "deepslate_brick_wall",
+        "qty": 16
+      },
+      {
+        "item": "cobbled_deepslate",
+        "qty": 32
+      },
+      {
+        "item": "polished_deepslate",
+        "qty": 16
+      },
+      {
+        "item": "iron_bars",
+        "qty": 8
+      },
+      {
+        "item": "chain",
+        "qty": 12
+      },
+      {
+        "item": "soul_lantern",
+        "qty": 8
+      },
+      {
+        "item": "candle",
+        "qty": 6
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Creusez un couloir large de 3 blocs et montez les parois en briques de deepslate (deepslate_bricks).",
+        "Formez une voûte à chaque travée avec des escaliers en briques de deepslate (deepslate_brick_stairs) qui se rejoignent au sommet.",
+        "Dallez le sol en alternant briques de deepslate et deepslate brut taillé (cobbled_deepslate) pour un rendu patiné.",
+        "Creusez des alcôves latérales tous les cinq blocs et fermez-les de barreaux de fer (iron_bars).",
+        "Suspendez des chaînes (chain) au plafond et terminez-les par des lanternes des âmes (soul_lantern).",
+        "Posez une plinthe de murets en briques de deepslate (deepslate_brick_wall) au bas des murs et une corniche de dalles (deepslate_brick_slab) au faîte de la voûte.",
+        "Disposez des socles de deepslate poli (polished_deepslate) surmontés de bougies (candle) pour marquer les tombeaux."
+      ],
+      "en": [
+        "Dig a corridor 3 blocks wide and raise the walls in deepslate bricks (deepslate_bricks).",
+        "Form a vault at each bay with deepslate brick stairs (deepslate_brick_stairs) meeting at the top.",
+        "Floor it by alternating deepslate bricks and cobbled deepslate (cobbled_deepslate) for a weathered finish.",
+        "Carve side alcoves every five blocks and close them off with iron bars (iron_bars).",
+        "Hang chains (chain) from the ceiling and cap them with soul lanterns (soul_lantern).",
+        "Add a skirting of deepslate brick walls (deepslate_brick_wall) at the base and a cornice of slabs (deepslate_brick_slab) along the crown of the vault.",
+        "Set polished deepslate (polished_deepslate) plinths topped with candles (candle) to mark the tombs."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "La lanterne des âmes diffuse une lumière bleutée plus faible : rapprochez-les un peu pour garder le passage éclairé et éviter les apparitions de monstres.",
+        "Mêlez briques de deepslate et deepslate brut taillé pour vieillir les murs sans qu'ils paraissent neufs.",
+        "Fermez le sommet d'une voûte en escaliers par une rangée de dalles pour masquer le joint central."
+      ],
+      "en": [
+        "Soul lanterns give a dimmer bluish glow; space them a touch closer to keep the passage lit and mob-free.",
+        "Mix deepslate bricks with cobbled deepslate to age the walls so they never look brand new.",
+        "Close the top of a stair-built vault with a row of slabs to hide the seam down the center."
+      ]
+    },
+    "category": "passage",
+    "videoId": "XFFe4v84ogI"
   },
   {
     "id": "relax_rustic_fire_pit",
@@ -2509,7 +3811,8 @@ window.BUILDINGS = [
         "Break up the perfect circle with a few grass tufts and flowers around the edge."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "Q23vHpjWDK4"
   },
   {
     "id": "relax_tiered_fountain",
@@ -2603,7 +3906,8 @@ window.BUILDINGS = [
         "Keep the fountain perfectly symmetrical: build one quarter, then copy it around."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "LxTyimUgtAU"
   },
   {
     "id": "relax_zen_bamboo_pond",
@@ -2705,7 +4009,8 @@ window.BUILDINGS = [
         "A few stone stepping-stones crossing the pond boost the zen feel."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "pOMRGyfDt_k"
   },
   {
     "id": "relax_cozy_bench_nook",
@@ -2800,7 +4105,8 @@ window.BUILDINGS = [
         "Back the bench against a wall or hedge to boost the sheltered feeling."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "qecOtjxFfKI"
   },
   {
     "id": "relax_garden_gazebo",
@@ -2898,7 +4204,8 @@ window.BUILDINGS = [
         "Let flowers climb the posts to blend the gazebo into the garden."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "d8xgneawXjA"
   },
   {
     "id": "relax_mediterranean_plaza",
@@ -2996,6 +4303,321 @@ window.BUILDINGS = [
         "Add greenery in pots to contrast with the sandy tones."
       ]
     },
-    "category": "relax"
+    "category": "relax",
+    "videoId": "d9y_j4I_W64"
+  },
+  {
+    "id": "relax_reflecting_pool_walk",
+    "emoji": "💧",
+    "difficulty": "Easy",
+    "tags": [
+      "water",
+      "formal",
+      "calm"
+    ],
+    "name": {
+      "fr": "Bassin Miroir",
+      "en": "Reflecting Pool Walk"
+    },
+    "style": {
+      "fr": "Minimaliste formel",
+      "en": "Formal minimalist"
+    },
+    "size": {
+      "fr": "13×5",
+      "en": "13×5"
+    },
+    "description": {
+      "fr": "Un long bassin d'eau parfaitement immobile bordé d'une allée en quartz clair. Le fond en prismarine sombre fait ressortir la surface qui reflète le ciel, tandis que des sea lanterns immergées diffusent une lueur douce à la tombée de la nuit. Aucun jet, aucun mouvement : juste un plan d'eau apaisant pour marcher au calme.",
+      "en": "A long, perfectly still pool of water framed by a pale quartz walkway. The dark prismarine floor makes the surface pop as it mirrors the sky, while submerged sea lanterns cast a soft glow at dusk. No jets, no motion, just a calm sheet of water to stroll beside."
+    },
+    "materials": [
+      {
+        "item": "smooth_quartz",
+        "qty": 64
+      },
+      {
+        "item": "quartz_slab",
+        "qty": 40
+      },
+      {
+        "item": "dark_prismarine",
+        "qty": 55
+      },
+      {
+        "item": "dark_prismarine_slab",
+        "qty": 36
+      },
+      {
+        "item": "water_bucket",
+        "qty": 1
+      },
+      {
+        "item": "sea_lantern",
+        "qty": 6
+      },
+      {
+        "item": "lantern",
+        "qty": 8
+      },
+      {
+        "item": "chain",
+        "qty": 8
+      },
+      {
+        "item": "polished_diorite",
+        "qty": 12
+      },
+      {
+        "item": "flower_pot",
+        "qty": 4
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Délimite un rectangle de 13×5, puis creuse un bassin central de 9×3 sur une profondeur d'un bloc et tapisse le fond et les parois de dark_prismarine.",
+        "Encastre quelques sea_lantern dans le fond avant de remplir tout le bassin avec le water_bucket pour un éclairage sans blocs flottants.",
+        "Borde le pourtour du bassin d'une rangée de dark_prismarine_slab posée au ras de l'eau.",
+        "Pave l'allée qui entoure le bassin en smooth_quartz et termine le bord extérieur avec des quartz_slab.",
+        "Insère des carrés d'accent en polished_diorite aux quatre coins de l'allée.",
+        "Dispose des lantern au sol le long du chemin et suspends-en d'autres à des chain aux extrémités.",
+        "Pose un flower_pot à chaque bout du bassin pour clore la composition."
+      ],
+      "en": [
+        "Mark out a 13×5 rectangle, then dig a central 9×3 basin one block deep and line the floor and walls with dark_prismarine.",
+        "Sink a few sea_lantern into the floor before filling the whole basin with the water_bucket for glow without floating light blocks.",
+        "Edge the basin with a course of dark_prismarine_slab set flush with the water.",
+        "Pave the surrounding walkway in smooth_quartz and finish the outer rim with quartz_slab.",
+        "Inset polished_diorite accent squares at the four corners of the walkway.",
+        "Set lantern along the path at ground level and hang more from chain at each end.",
+        "Place a flower_pot at each end of the pool to close the composition."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Garde le bassin parfaitement symétrique et laisse le ciel dégagé au-dessus : le reflet est bien plus net sans blocs qui dépassent.",
+        "Les sea_lantern immergées éclairent uniformément l'eau sans casser la surface, contrairement aux lanternes flottantes.",
+        "Une bordure d'un seul bloc de dalles suffit ; un cadre trop large écrase l'effet miroir."
+      ],
+      "en": [
+        "Keep the basin perfectly symmetrical and leave open sky above it — the reflection reads much cleaner with nothing poking out.",
+        "Submerged sea_lantern light the water evenly without breaking the surface, unlike floating lanterns.",
+        "A single-block slab rim is plenty; too wide a frame flattens the mirror effect."
+      ]
+    },
+    "category": "relax",
+    "videoId": "yp3mWXWx3qg"
+  },
+  {
+    "id": "relax_sunken_fire_lounge",
+    "emoji": "🔥",
+    "difficulty": "Medium",
+    "tags": [
+      "fire",
+      "desert",
+      "lounge"
+    ],
+    "name": {
+      "fr": "Salon de Feu Encaissé",
+      "en": "Sunken Fire Lounge"
+    },
+    "style": {
+      "fr": "Désert chaleureux",
+      "en": "Warm desert"
+    },
+    "size": {
+      "fr": "9×9",
+      "en": "9×9"
+    },
+    "description": {
+      "fr": "Une fosse de conversation en contrebas, taillée dans le grès lisse, avec un feu de camp central et des banquettes coussinées tout autour. On descend deux marches pour s'installer à l'abri du vent, entre coussins ocre et poteries. Chaleureux et convivial, idéal pour les soirées.",
+      "en": "A sunken conversation pit carved from smooth sandstone, with a central campfire and cushioned benches all around. You step down two stairs into a wind-sheltered hollow of ochre cushions and clay pots. Warm and social, made for evenings together."
+    },
+    "materials": [
+      {
+        "item": "smooth_sandstone",
+        "qty": 48
+      },
+      {
+        "item": "smooth_sandstone_stairs",
+        "qty": 12
+      },
+      {
+        "item": "smooth_sandstone_slab",
+        "qty": 24
+      },
+      {
+        "item": "sandstone_wall",
+        "qty": 16
+      },
+      {
+        "item": "campfire",
+        "qty": 1
+      },
+      {
+        "item": "red_terracotta",
+        "qty": 20
+      },
+      {
+        "item": "orange_carpet",
+        "qty": 10
+      },
+      {
+        "item": "brown_carpet",
+        "qty": 8
+      },
+      {
+        "item": "lantern",
+        "qty": 6
+      },
+      {
+        "item": "decorated_pot",
+        "qty": 3
+      },
+      {
+        "item": "barrel",
+        "qty": 2
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Marque un carré de 9×9 et creuse une fosse centrale de 5×5 sur un bloc de profondeur.",
+        "Habille les parois de la fosse en smooth_sandstone et installe des smooth_sandstone_stairs sur un côté pour descendre.",
+        "Ceinture le fond de la fosse d'une banquette en smooth_sandstone_slab et recouvre-la d'orange_carpet et de brown_carpet en guise de coussins.",
+        "Pose une plaque de red_terracotta au centre et allume un campfire dessus, à distance des tapis.",
+        "Pave la terrasse haute autour de la fosse en alternant red_terracotta et smooth_sandstone.",
+        "Dresse un garde-corps de sandstone_wall le long du bord, surmonté de lantern à intervalles.",
+        "Place quelques decorated_pot dans les coins et un barrel de chaque côté comme tables d'appoint."
+      ],
+      "en": [
+        "Mark a 9×9 square and dig a central 5×5 pit one block deep.",
+        "Face the pit walls in smooth_sandstone and set smooth_sandstone_stairs on one side as a step down.",
+        "Ring the pit floor with a smooth_sandstone_slab bench and top it with orange_carpet and brown_carpet as cushions.",
+        "Lay a red_terracotta plate in the center and light a campfire on it, clear of the carpets.",
+        "Pave the upper terrace around the pit by alternating red_terracotta and smooth_sandstone.",
+        "Run a sandstone_wall railing along the edge, capped with lantern at intervals.",
+        "Tuck a few decorated_pot into the corners and set a barrel on each side as side tables."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Pose toujours le campfire sur un bloc ininflammable comme la red_terracotta et laisse un bloc d'écart avec les tapis pour éviter tout risque de propagation.",
+        "Le contraste entre le grès lisse pâle et la terracotta rouge donne toute sa chaleur au salon ; n'hésite pas à doubler les tons ocre dans les coussins.",
+        "Une fosse d'un seul bloc de profondeur suffit à couper le vent tout en gardant le feu bien visible depuis la terrasse."
+      ],
+      "en": [
+        "Always set the campfire on a non-flammable block like red_terracotta and keep one block of clearance from the carpets to avoid any spread.",
+        "The contrast between pale smooth sandstone and red terracotta gives the lounge its warmth — lean into the ochre tones in the cushions.",
+        "A single-block-deep pit is enough to block the wind while keeping the fire visible from the terrace."
+      ]
+    },
+    "category": "relax",
+    "videoId": "9IJo9IexX58"
+  },
+  {
+    "id": "relax_waterfall_grotto_seat",
+    "emoji": "🪨",
+    "difficulty": "Hard",
+    "tags": [
+      "water",
+      "rustic",
+      "cave"
+    ],
+    "name": {
+      "fr": "Grotte à Cascade",
+      "en": "Waterfall Grotto Seat"
+    },
+    "style": {
+      "fr": "Grotte sauvage",
+      "en": "Wild grotto"
+    },
+    "size": {
+      "fr": "7×6",
+      "en": "7×6"
+    },
+    "description": {
+      "fr": "Un renfoncement rocheux moussu d'où tombe une fine cascade, avec un banc en épicéa niché face à l'eau. La paroi mêle pierre moussue et roche à concrétions, des stalactites pendent de l'avancée et la mousse tapisse le sol. Un coin sauvage et humide, presque secret, pour s'asseoir et écouter l'eau couler.",
+      "en": "A mossy rock alcove with a thin waterfall spilling down and a spruce bench tucked in facing the water. The wall blends mossy stone and dripstone, stalactites hang from the overhang, and moss carpets the floor. A wild, damp, almost secret corner to sit and listen to the water fall."
+    },
+    "materials": [
+      {
+        "item": "mossy_cobblestone",
+        "qty": 50
+      },
+      {
+        "item": "mossy_cobblestone_stairs",
+        "qty": 16
+      },
+      {
+        "item": "mossy_cobblestone_slab",
+        "qty": 14
+      },
+      {
+        "item": "dripstone_block",
+        "qty": 18
+      },
+      {
+        "item": "pointed_dripstone",
+        "qty": 8
+      },
+      {
+        "item": "water_bucket",
+        "qty": 1
+      },
+      {
+        "item": "moss_carpet",
+        "qty": 16
+      },
+      {
+        "item": "moss_block",
+        "qty": 8
+      },
+      {
+        "item": "spruce_slab",
+        "qty": 6
+      },
+      {
+        "item": "spruce_stairs",
+        "qty": 4
+      },
+      {
+        "item": "lantern",
+        "qty": 4
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Monte une paroi arrière irrégulière en mêlant mossy_cobblestone et dripstone_block, avec des hauteurs variées pour un rendu de falaise naturelle.",
+        "Sculpte une avancée en surplomb avec des mossy_cobblestone_stairs et des mossy_cobblestone_slab au sommet de la paroi.",
+        "Creuse une rigole d'un bloc de large en haut et verse un water_bucket pour créer la cascade qui ruisselle sur la roche.",
+        "Suspends des pointed_dripstone sous le surplomb pour figurer des stalactites au-dessus de la chute.",
+        "Tapisse le sol de moss_carpet et dispose quelques moss_block en guise de rochers moussus.",
+        "Assemble un banc face à la cascade avec des spruce_slab pour l'assise et des spruce_stairs en dossier.",
+        "Glisse des lantern dans les creux de la roche pour une lumière chaude et tamisée."
+      ],
+      "en": [
+        "Build an irregular back wall mixing mossy_cobblestone and dripstone_block, varying the heights for a natural cliff look.",
+        "Shape an overhang with mossy_cobblestone_stairs and mossy_cobblestone_slab at the top of the wall.",
+        "Carve a one-wide channel along the top and pour a water_bucket to form the waterfall streaming down the rock.",
+        "Hang pointed_dripstone beneath the overhang as stalactites above the falls.",
+        "Carpet the floor with moss_carpet and scatter a few moss_block as mossy boulders.",
+        "Assemble a bench facing the waterfall using spruce_slab for the seat and spruce_stairs as a backrest.",
+        "Tuck lantern into crevices in the rock for warm, dim light."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Casse la régularité de la paroi en avançant et reculant les blocs d'une case : une falaise crédible n'a jamais de face plate.",
+        "Fais démarrer la cascade sous une avancée d'un bloc pour que l'eau retombe droit sans se répandre sur tout le sol.",
+        "Alterne mossy_cobblestone et dripstone_block plutôt que d'utiliser un seul matériau : le mélange de textures donne tout le cachet sauvage à la grotte."
+      ],
+      "en": [
+        "Break up the wall by pushing blocks in and out by one — a believable cliff never has a flat face.",
+        "Start the waterfall under a one-block overhang so the water drops straight down instead of spreading across the floor.",
+        "Alternate mossy_cobblestone and dripstone_block rather than a single material — the mix of textures is what gives the grotto its wild character."
+      ]
+    },
+    "category": "relax",
+    "videoId": "vQfoNe1kEWM"
   }
 ];

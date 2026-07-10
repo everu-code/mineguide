@@ -32,6 +32,13 @@
   --medium: #e9a93c;
   --hard:   #db5238;
 
+  /* Ambient glow + chrome (themeable) */
+  --glow-a:      rgba(233,169,60,.11);
+  --glow-b:      rgba(116,189,79,.07);
+  --header-top:  rgba(40,32,23,.92);
+  --header-bot:  rgba(24,19,14,.82);
+  --accent-line: rgba(116,189,79,.5);
+
   --radius:   14px;
   --radius-sm: 9px;
   --shadow:   0 10px 30px rgba(0,0,0,.45);
@@ -41,6 +48,39 @@
   --mono: "Consolas", "SF Mono", ui-monospace, monospace;
 }
 
+/* ============ Selectable themes (data-theme on <html>) ============ */
+/* default (no attribute) = Cozy warm. Below are the alternatives. */
+
+/* 1 — Classic: the original cool slate theme */
+:root[data-theme="classic"] {
+  --bg:#14161a; --bg-2:#191c22; --panel:#21252e; --panel-2:#272c37; --panel-hover:#2e3541; --border:#363d4a; --border-soft:#2b313c;
+  --text:#e7ebf0; --text-dim:#a3adba; --text-faint:#6b7482;
+  --green:#5db85c; --green-bright:#7ed957; --green-deep:#3a8a3a; --emerald:#2ecc71; --gold:#f0b429; --redstone:#e0483a; --diamond:#4fd3c4;
+  --easy:#5db85c; --medium:#f0b429; --hard:#e0483a;
+  --glow-a:rgba(93,184,92,.10); --glow-b:rgba(79,211,196,.06);
+  --header-top:rgba(25,28,34,.90); --header-bot:rgba(20,22,26,.80); --accent-line:rgba(93,184,92,.5);
+}
+
+/* 3 — Cherry & Honey: soft rose + honey gold on a dark plum base (ref image 1) */
+:root[data-theme="cherry"] {
+  --bg:#1e141a; --bg-2:#261b22; --panel:#32232d; --panel-2:#3c2b35; --panel-hover:#492f40; --border:#5a3b4c; --border-soft:#3e2a36;
+  --text:#f7e7ec; --text-dim:#d9bac5; --text-faint:#a6818f;
+  --green:#e28cb1; --green-bright:#f2a7c6; --green-deep:#b45f84; --emerald:#e89bb8; --gold:#f2b83e; --redstone:#e0655a; --diamond:#69c6c0;
+  --easy:#e28cb1; --medium:#f2b83e; --hard:#e0655a;
+  --glow-a:rgba(242,184,62,.12); --glow-b:rgba(226,140,177,.11);
+  --header-top:rgba(50,35,45,.92); --header-bot:rgba(30,20,26,.82); --accent-line:rgba(242,167,198,.5);
+}
+
+/* 4 — Meadow & Sand: sandy base + moss/lime green (ref image 2) */
+:root[data-theme="meadow"] {
+  --bg:#181712; --bg-2:#201e16; --panel:#292619; --panel-2:#333020; --panel-hover:#3d3927; --border:#4c4631; --border-soft:#353120;
+  --text:#eee7d2; --text-dim:#c5bc9d; --text-faint:#8f8567;
+  --green:#8fbf3f; --green-bright:#aad85e; --green-deep:#5f8a24; --emerald:#57c98a; --gold:#d9b84a; --redstone:#d0693a; --diamond:#56c6bd;
+  --easy:#8fbf3f; --medium:#d9b84a; --hard:#d0693a;
+  --glow-a:rgba(217,184,74,.10); --glow-b:rgba(143,191,63,.09);
+  --header-top:rgba(41,38,25,.92); --header-bot:rgba(24,23,18,.82); --accent-line:rgba(143,191,63,.5);
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -48,8 +88,8 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font);
   background:
-    radial-gradient(1100px 620px at 82% -12%, rgba(233,169,60,.11), transparent 60%),
-    radial-gradient(950px 520px at 0% 4%, rgba(116,189,79,.07), transparent 55%),
+    radial-gradient(1100px 620px at 82% -12%, var(--glow-a), transparent 60%),
+    radial-gradient(950px 520px at 0% 4%, var(--glow-b), transparent 55%),
     var(--bg);
   background-attachment: fixed;
   color: var(--text);
@@ -67,15 +107,16 @@ a { color: inherit; text-decoration: none; }
 
 header.topbar {
   position: sticky; top: 0; z-index: 40;
-  background: linear-gradient(180deg, rgba(40,32,23,.92), rgba(24,19,14,.82));
+  background: linear-gradient(180deg, var(--header-top), var(--header-bot));
   backdrop-filter: blur(14px);
+  transition: background-color .35s ease;
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-soft);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 10px 30px -18px rgba(0,0,0,.8);
 }
 header.topbar::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
-  background: linear-gradient(90deg, transparent 8%, rgba(93,184,92,.55), rgba(126,217,87,.35), transparent 92%);
+  background: linear-gradient(90deg, transparent 8%, var(--accent-line), transparent 92%);
   pointer-events: none;
 }
 .topbar .wrap {
@@ -512,6 +553,15 @@ footer.foot a { color: var(--green-bright); }
 }
 .lang-btn:hover { background: var(--panel-hover); color: var(--text); border-color: var(--green); transform: translateY(-1px); box-shadow: 0 0 0 3px rgba(93,184,92,.12); }
 .lang-btn:active { transform: translateY(0); box-shadow: none; }
+.theme-select {
+  margin-left: 8px; padding: 7px 9px; border-radius: 11px;
+  border: 1px solid var(--border); background: var(--panel);
+  color: var(--text-dim); font-weight: 700; font-size: .76rem; font-family: var(--font);
+  cursor: pointer; transition: all .16s; max-width: 160px;
+}
+.theme-select:hover { background: var(--panel-hover); color: var(--text); border-color: var(--green); transform: translateY(-1px); }
+.theme-select:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(120,180,90,.14); }
+.theme-select option { background: var(--panel-2); color: var(--text); font-weight: 600; }
 
 /* ---------- Farm thumbnail ---------- */
 .fc-thumb-wrap { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; cursor: pointer;
@@ -541,8 +591,12 @@ footer.foot a { color: var(--green-bright); }
 .fc-thumb-wrap.noimg .fc-thumb-fallback { filter: drop-shadow(0 4px 10px rgba(0,0,0,.45)); }
 
 /* ---------- Motion & transitions ---------- */
-body { transition: opacity .22s ease; }
+body { transition: opacity .22s ease, background-color .35s ease, color .3s ease; }
 body.page-leaving { opacity: 0; }
+/* smooth theme-switch colour fade on surfaces that have no hover transition */
+.fc-metrics .metric, .checklist, .prog-bar, footer.foot, .item-icon {
+  transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+}
 
 @keyframes pageIn { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } }
 @keyframes cardIn { from { opacity: 0; transform: translateY(7px) scale(.985); } to { opacity: 1; transform: none; } }

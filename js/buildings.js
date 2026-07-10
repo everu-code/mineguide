@@ -67,7 +67,7 @@ function buildingCardHTML(b) {
         <div class="metric"><div class="lbl">${t("build_size")}</div><div class="val">${tr(b.size)}</div></div>
       </div>
 
-      <button class="video-btn" data-bsearch>🔎 ${t("watch_builds")}</button>
+      <button class="video-btn" data-bsearch>${b.videoId ? "▶" : "🔎"} ${t("watch_builds")}</button>
 
       <div class="section-label" style="margin-top:20px">⚙️ ${t("build_multiplier")}</div>
       <div class="mult-row">
@@ -175,8 +175,48 @@ function wireBuildingCard(b) {
   card.querySelector("[data-collapse-toggle]").onclick = () => collapse.classList.toggle("open");
 
   card.querySelectorAll("[data-bsearch]").forEach(el =>
-    el.addEventListener("click", () => window.open(bSearchURL(b), "_blank", "noopener")));
+    el.addEventListener("click", () => {
+      if (b.videoId) openBuildVideo(b);
+      else window.open(bSearchURL(b), "_blank", "noopener");
+    }));
 }
+
+/* ---------- Video modal ---------- */
+const backdrop = document.getElementById("modalBackdrop");
+const modal = document.getElementById("modal");
+
+function openBuildVideo(b) {
+  modal.innerHTML = `
+    <div class="modal-head">
+      <div class="fc-emoji" style="width:52px;height:52px">${b.emoji}</div>
+      <div><h2>${tr(b.name)}</h2>
+        <div class="cats"><span class="mini-tag">${t("bcat_" + b.category)}</span>
+          <span class="mini-tag">${tr(b.style)}</span></div></div>
+      <button class="close-btn" id="closeModal">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="video-embed">
+        <iframe src="https://www.youtube-nocookie.com/embed/${b.videoId}"
+          title="${tr(b.name)}"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="modal-actions">
+        <a class="btn primary" href="https://www.youtube.com/watch?v=${b.videoId}" target="_blank" rel="noopener">${t("open_youtube")}</a>
+        <a class="btn" href="${bSearchURL(b)}" target="_blank" rel="noopener">${t("more_tutorials")}</a>
+      </div>
+    </div>`;
+  backdrop.classList.add("open");
+  document.body.style.overflow = "hidden";
+  document.getElementById("closeModal").onclick = closeBuildVideo;
+}
+function closeBuildVideo() {
+  modal.innerHTML = "";
+  backdrop.classList.remove("open");
+  document.body.style.overflow = "";
+}
+backdrop.addEventListener("click", e => { if (e.target === backdrop) closeBuildVideo(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeBuildVideo(); });
 
 /* ---------- Init ---------- */
 buildBTags();

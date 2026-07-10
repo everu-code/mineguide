@@ -55,7 +55,7 @@ const STRINGS = {
     page_title_builds: "Guide de construction",
     nav_builds: "Bâtiments",
     build_style: "Style", build_size: "Taille",
-    watch_builds: "Voir des tutos de ce build",
+    watch_builds: "Voir le tuto vidéo",
     builds_all: "Tout",
     builds_count: n => `${n} bâtiment${n > 1 ? "s" : ""}`,
     bcat_living: "🏠 Maison & Cosy",
@@ -63,6 +63,12 @@ const STRINGS = {
     bcat_utility: "📦 Stockage & Atelier",
     bcat_passage: "🌉 Ponts & Passerelles",
     bcat_relax: "⛲ Détente",
+    /* themes */
+    theme_aria: "Thème de couleur",
+    theme_cozy: "🪵 Cozy (bois)",
+    theme_classic: "🌫️ Classique",
+    theme_cherry: "🌸 Cerisier & Miel",
+    theme_meadow: "🌿 Prairie & Sable",
     /* category tags */
     cat_all: "Tout",
     "cat_Most Used": "Populaires", cat_Essential: "Essentiels", cat_Tools: "Outils",
@@ -122,7 +128,7 @@ const STRINGS = {
     page_title_builds: "Building Guide",
     nav_builds: "Builds",
     build_style: "Style", build_size: "Size",
-    watch_builds: "Watch tutorials for this build",
+    watch_builds: "Watch the video tutorial",
     builds_all: "All",
     builds_count: n => `${n} build${n > 1 ? "s" : ""}`,
     bcat_living: "🏠 Living Area",
@@ -130,6 +136,12 @@ const STRINGS = {
     bcat_utility: "📦 Utility Shed",
     bcat_passage: "🌉 Passages",
     bcat_relax: "⛲ Relax Spot",
+    /* themes */
+    theme_aria: "Colour theme",
+    theme_cozy: "🪵 Cozy (wood)",
+    theme_classic: "🌫️ Classic",
+    theme_cherry: "🌸 Cherry & Honey",
+    theme_meadow: "🌿 Meadow & Sand",
     cat_all: "All",
     "cat_Most Used": "Most Used", cat_Essential: "Essential", cat_Tools: "Tools",
     cat_Combat: "Combat", cat_Redstone: "Redstone", cat_Blocks: "Blocks",
@@ -174,6 +186,15 @@ function setLang(l) {
   location.reload();
 }
 
+/* ---------- Colour themes ---------- */
+const THEMES = ["cozy", "classic", "cherry", "meadow"];
+function getTheme() { try { return localStorage.getItem("mcguide.theme") || "cozy"; } catch (e) { return "cozy"; } }
+function setTheme(v) {
+  if (v === "cozy") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", v);
+  try { localStorage.setItem("mcguide.theme", v); } catch (e) {}
+}
+
 /* apply static translations (elements with data-i18n / data-i18n-ph) */
 function applyStaticI18n() {
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
@@ -183,6 +204,15 @@ function applyStaticI18n() {
     lb.textContent = LANG === "fr" ? "EN" : "FR";
     lb.title = LANG === "fr" ? "Switch to English" : "Passer en français";
     lb.onclick = () => setLang(LANG === "fr" ? "en" : "fr");
+  }
+  const ts = document.getElementById("themeSelect");
+  if (ts) {
+    setTheme(getTheme());
+    ts.innerHTML = THEMES.map(v => `<option value="${v}">${t("theme_" + v)}</option>`).join("");
+    ts.value = getTheme();
+    ts.title = t("theme_aria");
+    ts.setAttribute("aria-label", t("theme_aria"));
+    ts.onchange = () => setTheme(ts.value);
   }
   document.documentElement.lang = LANG;
 }
