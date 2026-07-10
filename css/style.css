@@ -4,33 +4,33 @@
    ============================================================ */
 
 :root {
-  /* Surfaces */
-  --bg:            #14161a;
-  --bg-2:          #191c22;
-  --panel:         #21252e;
-  --panel-2:       #272c37;
-  --panel-hover:   #2e3541;
-  --border:        #363d4a;
-  --border-soft:   #2b313c;
+  /* Surfaces — warm candlelit oak & stone (cozy, still dark) */
+  --bg:            #191410;
+  --bg-2:          #201a13;
+  --panel:         #2a2118;
+  --panel-2:       #332920;
+  --panel-hover:   #3d3227;
+  --border:        #4a3b2b;
+  --border-soft:   #35291c;
 
-  /* Text */
-  --text:          #e7ebf0;
-  --text-dim:      #a3adba;
-  --text-faint:    #6b7482;
+  /* Text — warm parchment / cream */
+  --text:          #f1e7d6;
+  --text-dim:      #c6b7a0;
+  --text-faint:    #93826c;
 
-  /* Accents — Minecraft grass green + emerald */
-  --green:         #5db85c;
-  --green-bright:  #7ed957;
-  --green-deep:    #3a8a3a;
-  --emerald:       #2ecc71;
-  --gold:          #f0b429;
-  --redstone:      #e0483a;
-  --diamond:       #4fd3c4;
+  /* Accents — mossy grass green + torch honey + warm redstone */
+  --green:         #74bd4f;
+  --green-bright:  #93d766;
+  --green-deep:    #4f8a33;
+  --emerald:       #4ec98a;
+  --gold:          #e9a93c;
+  --redstone:      #db5238;
+  --diamond:       #56c6bd;
 
   /* Difficulty */
-  --easy:   #5db85c;
-  --medium: #f0b429;
-  --hard:   #e0483a;
+  --easy:   #74bd4f;
+  --medium: #e9a93c;
+  --hard:   #db5238;
 
   --radius:   14px;
   --radius-sm: 9px;
@@ -48,9 +48,10 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font);
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(93,184,92,.10), transparent 60%),
-    radial-gradient(900px 500px at 0% 0%, rgba(79,211,196,.06), transparent 55%),
+    radial-gradient(1100px 620px at 82% -12%, rgba(233,169,60,.11), transparent 60%),
+    radial-gradient(950px 520px at 0% 4%, rgba(116,189,79,.07), transparent 55%),
     var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.55;
   min-height: 100vh;
@@ -66,7 +67,7 @@ a { color: inherit; text-decoration: none; }
 
 header.topbar {
   position: sticky; top: 0; z-index: 40;
-  background: linear-gradient(180deg, rgba(25,28,34,.90), rgba(20,22,26,.80));
+  background: linear-gradient(180deg, rgba(40,32,23,.92), rgba(24,19,14,.82));
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-soft);
@@ -538,6 +539,39 @@ footer.foot a { color: var(--green-bright); }
 .fc-thumb-wrap.bcat-passage   { background: linear-gradient(145deg, #263a38, #142220); }
 .fc-thumb-wrap.bcat-relax     { background: linear-gradient(145deg, #223642, #131f27); }
 .fc-thumb-wrap.noimg .fc-thumb-fallback { filter: drop-shadow(0 4px 10px rgba(0,0,0,.45)); }
+
+/* ---------- Motion & transitions ---------- */
+body { transition: opacity .22s ease; }
+body.page-leaving { opacity: 0; }
+
+@keyframes pageIn { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } }
+@keyframes cardIn { from { opacity: 0; transform: translateY(7px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes topIn  { from { opacity: 0; transform: translateY(-7px); } to { opacity: 1; transform: none; } }
+
+header.topbar { animation: topIn .5s cubic-bezier(.22,.61,.36,1) both; }
+main.wrap     { animation: pageIn .5s cubic-bezier(.22,.61,.36,1) both; }
+
+.item-card { animation: cardIn .3s ease both; }
+.farm-card { animation: cardIn .5s cubic-bezier(.22,.61,.36,1) both; }
+.farm-card:nth-child(2) { animation-delay: .05s; }
+.farm-card:nth-child(3) { animation-delay: .10s; }
+.farm-card:nth-child(4) { animation-delay: .15s; }
+.farm-card:nth-child(5) { animation-delay: .20s; }
+.farm-card:nth-child(6) { animation-delay: .24s; }
+.farm-card:nth-child(n+7) { animation-delay: .28s; }
+
+.tag { transition: background .16s ease, color .16s ease, border-color .16s ease, transform .16s ease, box-shadow .16s ease; }
+.tag.active { box-shadow: 0 4px 14px rgba(0,0,0,.28); }
+.check-row { transition: background .16s ease, border-color .16s ease, transform .1s ease; }
+.check-row:active { transform: scale(.99); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+  body.page-leaving { opacity: 1; }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {

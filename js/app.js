@@ -83,6 +83,23 @@ const Store = {
   setMult(farmId, n) { const d = this.load(); d.farmMultipliers[farmId] = Math.max(1, n | 0); this.save(); }
 };
 
+/* ---------- Page transition: fade out on internal navigation ---------- */
+(function () {
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return;
+  document.addEventListener("click", e => {
+    const a = e.target.closest && e.target.closest('a[href$=".html"]');
+    if (!a) return;
+    const href = a.getAttribute("href");
+    if (!href || a.target === "_blank" || e.button !== 0 ||
+        e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (/^[a-z]+:\/\//i.test(href)) return;   // skip absolute / external URLs
+    e.preventDefault();
+    document.body.classList.add("page-leaving");
+    setTimeout(() => { window.location.href = href; }, 170);
+  }, true);
+})();
+
 /* ---------- Toast ---------- */
 let _toastTimer = null;
 function toast(msg, emoji = "✅") {
