@@ -64,6 +64,14 @@ const STRINGS = {
     bcat_utility: "📦 Stockage & Atelier",
     bcat_passage: "🌉 Ponts & Passerelles",
     bcat_relax: "⛲ Détente",
+    /* farm categories */
+    fcat_all: "Tout",
+    fcat_resource: "⛏️ Ressources",
+    fcat_mob: "⚔️ Mobs & XP",
+    fcat_food: "🍖 Nourriture & Élevage",
+    fcat_villager: "🧑‍🌾 Villageois",
+    fcat_auto: "⚙️ Automatique",
+    farms_count: n => `${n} ferme${n > 1 ? "s" : ""}`,
     /* themes */
     theme_aria: "Thème de couleur",
     theme_cozy: "🪵 Cozy (bois)",
@@ -138,6 +146,14 @@ const STRINGS = {
     bcat_utility: "📦 Utility Shed",
     bcat_passage: "🌉 Passages",
     bcat_relax: "⛲ Relax Spot",
+    /* farm categories */
+    fcat_all: "All",
+    fcat_resource: "⛏️ Resources",
+    fcat_mob: "⚔️ Mobs & XP",
+    fcat_food: "🍖 Food & Animals",
+    fcat_villager: "🧑‍🌾 Villagers",
+    fcat_auto: "⚙️ Automatic",
+    farms_count: n => `${n} farm${n > 1 ? "s" : ""}`,
     /* themes */
     theme_aria: "Colour theme",
     theme_cozy: "🪵 Cozy (wood)",

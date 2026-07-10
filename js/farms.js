@@ -3,6 +3,27 @@
    ============================================================ */
 
 const farmGrid = document.getElementById("farmGrid");
+const farmTagRow = document.getElementById("farmTagRow");
+const farmCount = document.getElementById("farmCount");
+const FCATS = ["resource", "mob", "food", "villager", "auto"];
+let activeFCat = "All";
+
+function filteredFarms() {
+  return activeFCat === "All" ? FARMS : FARMS.filter(f => f.category === activeFCat);
+}
+function buildFTags() {
+  const entries = [{ val: "All", label: t("fcat_all") }, ...FCATS.map(c => ({ val: c, label: t("fcat_" + c) }))];
+  farmTagRow.innerHTML = entries.map(e =>
+    `<div class="tag${e.val === "All" ? " active" : ""}" data-fcat="${e.val}">${e.label}</div>`).join("");
+  farmTagRow.querySelectorAll(".tag").forEach(el => {
+    el.addEventListener("click", () => {
+      farmTagRow.querySelectorAll(".tag").forEach(x => x.classList.remove("active"));
+      el.classList.add("active");
+      activeFCat = el.dataset.fcat;
+      renderFarms();
+    });
+  });
+}
 
 function progressFor(farm) {
   const checks = Store.getChecks(farm.id);
@@ -38,9 +59,9 @@ function farmCardHTML(farm) {
 
   return `
   <div class="farm-card" data-farm="${farm.id}">
-    <div class="fc-thumb-wrap" data-video title="${tr(farm.videoTitle)}">
-      <img class="fc-thumb" src="${thumbURL(farm)}" alt="${tr(farm.name)}" loading="lazy"
-           onerror="this.closest('.fc-thumb-wrap').classList.add('noimg')">
+    <div class="fc-thumb-wrap${farm.videoId ? "" : " noimg"}" data-video title="${tr(farm.videoTitle)}">
+      ${farm.videoId ? `<img class="fc-thumb" src="${thumbURL(farm)}" alt="${tr(farm.name)}" loading="lazy"
+           onerror="this.closest('.fc-thumb-wrap').classList.add('noimg')">` : ""}
       <div class="fc-thumb-fallback">${farm.emoji}</div>
       <div class="fc-thumb-play">▶</div>
       <span class="pill diff ${farm.difficulty} fc-thumb-diff">${t("diff_" + farm.difficulty)}</span>
@@ -99,8 +120,10 @@ function farmCardHTML(farm) {
 }
 
 function renderFarms() {
-  farmGrid.innerHTML = FARMS.map(farmCardHTML).join("");
-  FARMS.forEach(wireFarmCard);
+  const list = filteredFarms();
+  if (farmCount) farmCount.textContent = t("farms_count", list.length);
+  farmGrid.innerHTML = list.map(farmCardHTML).join("");
+  list.forEach(wireFarmCard);
 }
 
 function wireFarmCard(farm) {
@@ -153,7 +176,10 @@ function wireFarmCard(farm) {
     details.style.maxHeight = open ? details.scrollHeight + "px" : "0";
   };
 
-  card.querySelectorAll("[data-video]").forEach(el => el.addEventListener("click", () => openVideo(farm)));
+  card.querySelectorAll("[data-video]").forEach(el => el.addEventListener("click", () => {
+    if (farm.videoId) openVideo(farm);
+    else window.open(searchURL(farm), "_blank", "noopener");
+  }));
 }
 
 /* ---------- Video modal ---------- */
@@ -193,4 +219,5 @@ backdrop.addEventListener("click", e => { if (e.target === backdrop) closeVideo(
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeVideo(); });
 
 /* ---------- Init ---------- */
+buildFTags();
 renderFarms();
