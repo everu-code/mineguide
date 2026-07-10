@@ -29210,5 +29210,637 @@
     "name_fr": "Dalle de purpur",
     "description_fr": "Se fabrique sur l'établi (donne 6).",
     "icon": "icons/purpur_slab.png"
+  },
+  {
+    "id": "tuff",
+    "name": "Tuff",
+    "emoji": "🪨",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "A volcanic stone found underground.",
+    "recipe": {
+      "type": "gathered",
+      "grid": [],
+      "yields": 1,
+      "ingredients": {}
+    },
+    "name_fr": "Tuf",
+    "description_fr": "Tuf — se récupère ou se mine dans le monde.",
+    "icon": "icons/tuff.png"
+  },
+  {
+    "id": "polished_tuff",
+    "name": "Polished Tuff",
+    "emoji": "🪨",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Four tuff.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff",
+          "tuff",
+          null
+        ],
+        [
+          "tuff",
+          "tuff",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 4,
+      "ingredients": {
+        "tuff": 4
+      }
+    },
+    "name_fr": "Tuf poli",
+    "description_fr": "Se fabrique sur l'établi (donne 4).",
+    "icon": "icons/polished_tuff.png"
+  },
+  {
+    "id": "tuff_bricks",
+    "name": "Tuff Bricks",
+    "emoji": "🧱",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Four polished tuff.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "polished_tuff",
+          "polished_tuff",
+          null
+        ],
+        [
+          "polished_tuff",
+          "polished_tuff",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 4,
+      "ingredients": {
+        "polished_tuff": 4
+      }
+    },
+    "name_fr": "Tuf taillé",
+    "description_fr": "Se fabrique sur l'établi (donne 4).",
+    "icon": "icons/tuff_bricks.png"
+  },
+  {
+    "id": "chiseled_tuff",
+    "name": "Chiseled Tuff",
+    "emoji": "🪨",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Two tuff slabs.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff_slab",
+          null,
+          null
+        ],
+        [
+          "tuff_slab",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 1,
+      "ingredients": {
+        "tuff_slab": 2
+      }
+    },
+    "name_fr": "Tuf sculpté",
+    "description_fr": "Se fabrique sur l'établi.",
+    "icon": "icons/chiseled_tuff.png"
+  },
+  {
+    "id": "chiseled_tuff_bricks",
+    "name": "Chiseled Tuff Bricks",
+    "emoji": "🧱",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Two tuff brick slabs.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff_brick_slab",
+          null,
+          null
+        ],
+        [
+          "tuff_brick_slab",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 1,
+      "ingredients": {
+        "tuff_brick_slab": 2
+      }
+    },
+    "name_fr": "Tuf taillé sculpté",
+    "description_fr": "Se fabrique sur l'établi.",
+    "icon": "icons/chiseled_tuff_bricks.png"
+  },
+  {
+    "id": "tuff_stairs",
+    "name": "Tuff Stairs",
+    "emoji": "🪜",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff stairs.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff",
+          null,
+          null
+        ],
+        [
+          "tuff",
+          "tuff",
+          null
+        ],
+        [
+          "tuff",
+          "tuff",
+          "tuff"
+        ]
+      ],
+      "yields": 4,
+      "ingredients": {
+        "tuff": 6
+      }
+    },
+    "name_fr": "Escalier en tuf",
+    "description_fr": "Se fabrique sur l'établi (donne 4).",
+    "icon": "icons/tuff_stairs.png"
+  },
+  {
+    "id": "tuff_slab",
+    "name": "Tuff Slab",
+    "emoji": "▬",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff slab.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff",
+          "tuff",
+          "tuff"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "tuff": 3
+      }
+    },
+    "name_fr": "Dalle de tuf",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/tuff_slab.png"
+  },
+  {
+    "id": "tuff_wall",
+    "name": "Tuff Wall",
+    "emoji": "🧱",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff wall.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff",
+          "tuff",
+          "tuff"
+        ],
+        [
+          "tuff",
+          "tuff",
+          "tuff"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "tuff": 6
+      }
+    },
+    "name_fr": "Muret de tuf",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/tuff_wall.png"
+  },
+  {
+    "id": "polished_tuff_stairs",
+    "name": "Polished Tuff Stairs",
+    "emoji": "🪜",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Polished Tuff stairs.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "polished_tuff",
+          null,
+          null
+        ],
+        [
+          "polished_tuff",
+          "polished_tuff",
+          null
+        ],
+        [
+          "polished_tuff",
+          "polished_tuff",
+          "polished_tuff"
+        ]
+      ],
+      "yields": 4,
+      "ingredients": {
+        "polished_tuff": 6
+      }
+    },
+    "name_fr": "Escalier en tuf poli",
+    "description_fr": "Se fabrique sur l'établi (donne 4).",
+    "icon": "icons/polished_tuff_stairs.png"
+  },
+  {
+    "id": "polished_tuff_slab",
+    "name": "Polished Tuff Slab",
+    "emoji": "▬",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Polished Tuff slab.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "polished_tuff",
+          "polished_tuff",
+          "polished_tuff"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "polished_tuff": 3
+      }
+    },
+    "name_fr": "Dalle de tuf poli",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/polished_tuff_slab.png"
+  },
+  {
+    "id": "polished_tuff_wall",
+    "name": "Polished Tuff Wall",
+    "emoji": "🧱",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Polished Tuff wall.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "polished_tuff",
+          "polished_tuff",
+          "polished_tuff"
+        ],
+        [
+          "polished_tuff",
+          "polished_tuff",
+          "polished_tuff"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "polished_tuff": 6
+      }
+    },
+    "name_fr": "Muret de tuf poli",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/polished_tuff_wall.png"
+  },
+  {
+    "id": "tuff_brick_stairs",
+    "name": "Tuff Brick Stairs",
+    "emoji": "🪜",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff Brick stairs.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff_bricks",
+          null,
+          null
+        ],
+        [
+          "tuff_bricks",
+          "tuff_bricks",
+          null
+        ],
+        [
+          "tuff_bricks",
+          "tuff_bricks",
+          "tuff_bricks"
+        ]
+      ],
+      "yields": 4,
+      "ingredients": {
+        "tuff_bricks": 6
+      }
+    },
+    "name_fr": "Escalier en tuf taillé",
+    "description_fr": "Se fabrique sur l'établi (donne 4).",
+    "icon": "icons/tuff_brick_stairs.png"
+  },
+  {
+    "id": "tuff_brick_slab",
+    "name": "Tuff Brick Slab",
+    "emoji": "▬",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff Brick slab.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff_bricks",
+          "tuff_bricks",
+          "tuff_bricks"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "tuff_bricks": 3
+      }
+    },
+    "name_fr": "Dalle de tuf taillé",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/tuff_brick_slab.png"
+  },
+  {
+    "id": "tuff_brick_wall",
+    "name": "Tuff Brick Wall",
+    "emoji": "🧱",
+    "category": [
+      "Blocks"
+    ],
+    "stackSize": 64,
+    "description": "Tuff Brick wall.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "tuff_bricks",
+          "tuff_bricks",
+          "tuff_bricks"
+        ],
+        [
+          "tuff_bricks",
+          "tuff_bricks",
+          "tuff_bricks"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 6,
+      "ingredients": {
+        "tuff_bricks": 6
+      }
+    },
+    "name_fr": "Muret de tuf taillé",
+    "description_fr": "Se fabrique sur l'établi (donne 6).",
+    "icon": "icons/tuff_brick_wall.png"
+  },
+  {
+    "id": "heavy_core",
+    "name": "Heavy Core",
+    "emoji": "⚫",
+    "category": [
+      "Combat"
+    ],
+    "stackSize": 1,
+    "description": "Found in ominous trial vaults.",
+    "recipe": {
+      "type": "gathered",
+      "grid": [],
+      "yields": 1,
+      "ingredients": {}
+    },
+    "name_fr": "Noyau lourd",
+    "description_fr": "Noyau lourd — se récupère ou se mine dans le monde.",
+    "icon": "icons/heavy_core.png"
+  },
+  {
+    "id": "breeze_rod",
+    "name": "Breeze Rod",
+    "emoji": "🌬️",
+    "category": [
+      "Combat",
+      "Nether"
+    ],
+    "stackSize": 64,
+    "description": "Dropped by the Breeze.",
+    "recipe": {
+      "type": "gathered",
+      "grid": [],
+      "yields": 1,
+      "ingredients": {}
+    },
+    "name_fr": "Bâton de Breeze",
+    "description_fr": "Bâton de Breeze — se récupère ou se mine dans le monde.",
+    "icon": "icons/breeze_rod.png"
+  },
+  {
+    "id": "mace",
+    "name": "Mace",
+    "emoji": "🔨",
+    "category": [
+      "Combat"
+    ],
+    "stackSize": 1,
+    "description": "Heavy core + breeze rod. A devastating slam attack.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "heavy_core",
+          null,
+          null
+        ],
+        [
+          "breeze_rod",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "yields": 1,
+      "ingredients": {
+        "heavy_core": 1,
+        "breeze_rod": 1
+      }
+    },
+    "name_fr": "Masse",
+    "description_fr": "Se fabrique sur l'établi.",
+    "icon": "icons/mace.png"
+  },
+  {
+    "id": "echo_shard",
+    "name": "Echo Shard",
+    "emoji": "🔊",
+    "category": [],
+    "stackSize": 64,
+    "description": "Found in ancient city chests.",
+    "recipe": {
+      "type": "gathered",
+      "grid": [],
+      "yields": 1,
+      "ingredients": {}
+    },
+    "name_fr": "Éclat d'écho",
+    "description_fr": "Éclat d'écho — se récupère ou se mine dans le monde.",
+    "icon": "icons/echo_shard.png"
+  },
+  {
+    "id": "recovery_compass",
+    "name": "Recovery Compass",
+    "emoji": "🧭",
+    "category": [
+      "Tools"
+    ],
+    "stackSize": 1,
+    "description": "Eight echo shards + a compass. Points to your last death.",
+    "recipe": {
+      "type": "crafting_table",
+      "grid": [
+        [
+          "echo_shard",
+          "echo_shard",
+          "echo_shard"
+        ],
+        [
+          "echo_shard",
+          "compass",
+          "echo_shard"
+        ],
+        [
+          "echo_shard",
+          "echo_shard",
+          "echo_shard"
+        ]
+      ],
+      "yields": 1,
+      "ingredients": {
+        "echo_shard": 8,
+        "compass": 1
+      }
+    },
+    "name_fr": "Boussole de récupération",
+    "description_fr": "Se fabrique sur l'établi.",
+    "icon": "icons/recovery_compass.png"
   }
 ]

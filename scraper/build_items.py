@@ -1001,6 +1001,31 @@ for mat, pre, label, cats, want_wall in SSW:
         add(f"{pre}_wall", f"{label} Wall", cats, f"{label} wall.", wall(mat), "🧱")
 
 
+# ---- tuff family (1.21) ----
+add("tuff", "Tuff", ["Blocks"], "A volcanic stone found underground.", gathered(), "🪨")
+add("polished_tuff", "Polished Tuff", ["Blocks"], "Four tuff.", square4("tuff", 4), "🪨")
+add("tuff_bricks", "Tuff Bricks", ["Blocks"], "Four polished tuff.", square4("polished_tuff", 4), "🧱")
+add("chiseled_tuff", "Chiseled Tuff", ["Blocks"], "Two tuff slabs.",
+    craft([["tuff_slab"], ["tuff_slab"]], 1), "🪨")
+add("chiseled_tuff_bricks", "Chiseled Tuff Bricks", ["Blocks"], "Two tuff brick slabs.",
+    craft([["tuff_brick_slab"], ["tuff_brick_slab"]], 1), "🧱")
+for pre, mat, label in [("tuff", "tuff", "Tuff"), ("polished_tuff", "polished_tuff", "Polished Tuff"),
+                        ("tuff_brick", "tuff_bricks", "Tuff Brick")]:
+    add(f"{pre}_stairs", f"{label} Stairs", ["Blocks"], f"{label} stairs.", stairs(mat), "🪜")
+    add(f"{pre}_slab", f"{label} Slab", ["Blocks"], f"{label} slab.", slab(mat), "▬")
+    add(f"{pre}_wall", f"{label} Wall", ["Blocks"], f"{label} wall.", wall(mat), "🧱")
+
+# ---- 1.21 combat / utility ----
+add("heavy_core", "Heavy Core", ["Combat"], "Found in ominous trial vaults.", gathered(), "⚫", 1)
+add("breeze_rod", "Breeze Rod", ["Combat", "Nether"], "Dropped by the Breeze.", gathered(), "🌬️")
+add("mace", "Mace", ["Combat"], "Heavy core + breeze rod. A devastating slam attack.",
+    craft([["heavy_core"], ["breeze_rod"]], 1), "🔨", 1)
+add("echo_shard", "Echo Shard", [], "Found in ancient city chests.", gathered(), "🔊")
+add("recovery_compass", "Recovery Compass", ["Tools"], "Eight echo shards + a compass. Points to your last death.",
+    craft([["echo_shard", "echo_shard", "echo_shard"], ["echo_shard", "compass", "echo_shard"],
+           ["echo_shard", "echo_shard", "echo_shard"]], 1), "🧭", 1)
+
+
 # ---------------- finalize ----------------
 # official names (en/fr) + French descriptions from the game's 26.2 lang files
 import urllib.request
