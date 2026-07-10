@@ -1,0 +1,745 @@
+window.FARMS = [
+  {
+    "id": "iron_farm",
+    "emoji": "🏭",
+    "videoId": "ldlJ-0oUHfk",
+    "difficulty": "Medium",
+    "tags": ["Resource", "Villager", "AFK"],
+    "name": { "fr": "Ferme à fer", "en": "Iron Farm" },
+    "efficiency": { "fr": "~200–600 fer/heure", "en": "~200–600 iron/hour" },
+    "dimensions": { "fr": "Tour ~16×16×20", "en": "~16×16×20 tower" },
+    "videoTitle": { "fr": "Ferme à fer facile (1.21+)", "en": "Easy Iron Farm (1.21+)" },
+    "description": {
+      "fr": "Trois villageois effrayés par un zombie déclenchent l'apparition de golems de fer, poussés vers un piège. La meilleure source de fer renouvelable.",
+      "en": "Three villagers scared by a zombie trigger iron golem spawns that are pushed into a killing zone. The gold-standard renewable iron source."
+    },
+    "materials": [
+      { "item": "hopper", "qty": 4 }, { "item": "chest", "qty": 2 },
+      { "item": "water_bucket", "qty": 4 }, { "item": "cobblestone", "qty": 200 },
+      { "item": "glass", "qty": 20 }, { "item": "oak_planks", "qty": 32 }, { "item": "campfire", "qty": 1 }
+    ],
+    "steps": {
+      "fr": [
+        "Amenez 3 villageois sur le lieu de construction (bateaux ou wagonnets).",
+        "Construisez les 3 cellules de villageois en haut, avec un lit et un établi partagés.",
+        "Piégez un zombie à côté, visible des villageois, pour les garder effrayés en permanence.",
+        "Bâtissez la plateforme d'apparition en dessous, avec des courants d'eau vers un feu de camp.",
+        "Placez trémies et coffres pour récupérer le fer et les coquelicots."
+      ],
+      "en": [
+        "Bring 3 villagers to the build site (boats or minecarts work well).",
+        "Build the 3 villager cells at the top sharing a bed and workstation.",
+        "Trap a zombie beside them, in sight, to keep them permanently scared.",
+        "Build the spawn platform below with water streams to a campfire.",
+        "Place hoppers and chests to collect the iron and poppies."
+      ]
+    },
+    "tips": {
+      "fr": ["Restez à 64+ blocs de tout village pour éviter les limites d'apparition.", "Un feu de camp tue les golems sans détruire le fer."],
+      "en": ["Stay 64+ blocks from any village to avoid spawn caps.", "A campfire kills golems without destroying dropped iron."]
+    }
+  },
+  {
+    "id": "gold_farm",
+    "emoji": "💰",
+    "videoId": "gB8wSuAhfNs",
+    "difficulty": "Hard",
+    "tags": ["Resource", "XP", "Nether"],
+    "name": { "fr": "Ferme à or (piglins)", "en": "Gold / Piglin Farm" },
+    "efficiency": { "fr": "~21 000 objets/heure + XP", "en": "~21,000 items/hour + XP" },
+    "dimensions": { "fr": "Grande plateforme sur le toit du Nether", "en": "Large Nether-roof platform" },
+    "videoTitle": { "fr": "Ferme à or 21 000+/h (1.21+)", "en": "Gold Farm 21,000+/h (1.21+)" },
+    "description": {
+      "fr": "Sur le toit du Nether, les piglins zombifiés apparaissent sur des blocs de magma, chutent près de la mort et sont achevés pour de l'or et de l'XP.",
+      "en": "On the Nether roof, zombified piglins spawn on magma blocks, fall to near-death and are finished off for gold and XP."
+    },
+    "materials": [
+      { "item": "hopper", "qty": 12 }, { "item": "chest", "qty": 6 }, { "item": "magma_block", "qty": 40 },
+      { "item": "obsidian", "qty": 16 }, { "item": "cobblestone", "qty": 400 }, { "item": "glass", "qty": 128 }, { "item": "water_bucket", "qty": 8 }
+    ],
+    "steps": {
+      "fr": [
+        "Accédez au toit du Nether (ou construisez au-dessus de l'océan de lave).",
+        "Posez de grandes plateformes de blocs de magma — les piglins n'apparaissent que là.",
+        "Laissez des trous pour que les piglins chutent juste assez pour être à demi-mort.",
+        "Construisez un sol de récupération avec trémies vers les coffres.",
+        "Couvrez tout le reste de dalles/verre pour empêcher les apparitions ailleurs."
+      ],
+      "en": [
+        "Access the Nether roof (or build high above the lava ocean).",
+        "Lay large magma-block platforms — piglins only spawn on those.",
+        "Leave gaps so piglins fall just enough to reach near-death.",
+        "Build a collection floor with hoppers feeding chests.",
+        "Slab/glass over everything else to stop outside spawns."
+      ]
+    },
+    "tips": {
+      "fr": ["Réglez la chute pour qu'un seul coup achève le piglin.", "Ils lâchent pépites, lingots (rares) et épées en or."],
+      "en": ["Tune the fall so one hit finishes the piglin.", "They drop nuggets, ingots (rare) and golden swords."]
+    }
+  },
+  {
+    "id": "raid_farm",
+    "emoji": "⚔️",
+    "videoId": "cqdd-5mbOtA",
+    "difficulty": "Hard",
+    "tags": ["Resource", "Combat", "Emeralds", "Totems"],
+    "name": { "fr": "Ferme à raids", "en": "Raid Farm" },
+    "efficiency": { "fr": "Émeraudes, totems & redstone en masse", "en": "Emeralds, totems & redstone by the box" },
+    "dimensions": { "fr": "Haute tour de pillards", "en": "Tall pillager tower" },
+    "videoTitle": { "fr": "Meilleure ferme à raids (26.1+)", "en": "Best Raid Farm (26.1+)" },
+    "description": {
+      "fr": "Déclenchez des raids sans fin pour farmer émeraudes, totems d'immortalité et redstone. La meilleure source de totems du jeu.",
+      "en": "Trigger endless raids to farm emeralds, totems of undying and redstone. The best totem source in the game."
+    },
+    "materials": [
+      { "item": "hopper", "qty": 16 }, { "item": "chest", "qty": 8 }, { "item": "water_bucket", "qty": 12 },
+      { "item": "obsidian", "qty": 24 }, { "item": "cobblestone", "qty": 500 }, { "item": "redstone", "qty": 8 }, { "item": "repeater", "qty": 4 }
+    ],
+    "steps": {
+      "fr": [
+        "Obtenez le Mauvais Présage en tuant un capitaine de patrouille de pillards.",
+        "Construisez une plateforme de raid au-dessus d'une chambre de mise à mort.",
+        "Entrez dans un village (ou près d'un villageois) pour lancer le raid.",
+        "Canalisez tous les assaillants vers un point central avec de l'eau.",
+        "Achevez-les manuellement (l'Évocateur pour les totems), récupérez via trémies."
+      ],
+      "en": [
+        "Get Bad Omen by killing a pillager patrol captain.",
+        "Build a raid platform above a killing chamber.",
+        "Enter a village (or near a villager) to start the raid.",
+        "Funnel all raiders to a central point with water.",
+        "Finish them manually (Evoker for totems); collect via hoppers."
+      ]
+    },
+    "tips": {
+      "fr": ["Gardez un villageois en sécurité pour relancer les raids.", "En difficulté Difficile : meilleurs butins et vagues supplémentaires."],
+      "en": ["Keep one villager safe to keep triggering raids.", "Play on Hard for the best drops and extra waves."]
+    }
+  },
+  {
+    "id": "mob_xp_farm",
+    "emoji": "🌙",
+    "videoId": "9Veucfj-6R4",
+    "difficulty": "Easy",
+    "tags": ["XP", "Resource", "AFK"],
+    "name": { "fr": "Ferme à mobs / XP (sans générateur)", "en": "Mob XP Farm (No Spawner)" },
+    "efficiency": { "fr": "XP + os, flèches, ficelle, poudre", "en": "XP + bones, arrows, string, gunpowder" },
+    "dimensions": { "fr": "Tour sombre ~24 blocs de haut", "en": "Dark tower ~24 blocks tall" },
+    "videoTitle": { "fr": "Ferme à XP la plus facile (1.21+)", "en": "Easiest Mob XP Farm (1.21+)" },
+    "description": {
+      "fr": "Une plateforme d'apparition sombre en hauteur regroupe les mobs hostiles vers une chute puis un point de mise à mort. Idéale en début de partie.",
+      "en": "A dark elevated spawning platform funnels hostile mobs down a drop to a kill spot. Perfect early-game."
+    },
+    "materials": [
+      { "item": "cobblestone", "qty": 350 }, { "item": "water_bucket", "qty": 6 },
+      { "item": "hopper", "qty": 6 }, { "item": "chest", "qty": 3 }, { "item": "oak_slab", "qty": 32 }, { "item": "torch", "qty": 8 }
+    ],
+    "steps": {
+      "fr": [
+        "Montez une plateforme d'apparition à 24+ blocs de votre point AFK.",
+        "Fermez-la complètement pour la garder dans le noir total.",
+        "Ajoutez des courants d'eau vers un trou central de chute.",
+        "Réglez la chute à ~23 blocs pour tuer en un coup.",
+        "Placez trémies et coffres sous la fente de mise à mort."
+      ],
+      "en": [
+        "Build a spawn platform 24+ blocks from your AFK spot.",
+        "Fully enclose it to keep it pitch black.",
+        "Add water streams to a central drop hole.",
+        "Tune the fall to ~23 blocks for one-hit kills.",
+        "Place hoppers and chests under the kill slot."
+      ]
+    },
+    "tips": {
+      "fr": ["Éclairez les grottes autour pour concentrer les apparitions sur la ferme.", "Enchantement Butin III = plus de butin."],
+      "en": ["Light up nearby caves so spawns focus on the farm.", "Looting III boosts drops."]
+    }
+  },
+  {
+    "id": "enderman_farm",
+    "emoji": "🟪",
+    "videoId": "1IM9zCwQUek",
+    "difficulty": "Medium",
+    "tags": ["XP", "End", "AFK"],
+    "name": { "fr": "Ferme à XP d'endermen", "en": "Enderman XP Farm" },
+    "efficiency": { "fr": "XP le plus rapide + perles de l'ender", "en": "Fastest XP + ender pearls" },
+    "dimensions": { "fr": "Plateforme dans l'End, tour 128+", "en": "End platform, 128+ tower" },
+    "videoTitle": { "fr": "Meilleure ferme à XP d'endermen (1.21/26.1+)", "en": "Best Enderman XP Farm (1.21/26.1+)" },
+    "description": {
+      "fr": "Sur les îles extérieures de l'End, les endermen apparaissent en masse, chutent et sont achevés en un coup pour un XP énorme.",
+      "en": "On the outer End islands endermen spawn en masse, fall, and are one-shot for enormous XP."
+    },
+    "materials": [
+      { "item": "obsidian", "qty": 32 }, { "item": "hopper", "qty": 4 }, { "item": "chest", "qty": 2 },
+      { "item": "water_bucket", "qty": 4 }, { "item": "cobblestone", "qty": 300 }
+    ],
+    "steps": {
+      "fr": [
+        "Rejoignez les îles extérieures de l'End via le portail de l'île principale.",
+        "Construisez une grande plateforme d'apparition plate.",
+        "Créez un trou central où les endermen tombent.",
+        "Réglez la chute à ~40 blocs pour tuer en un coup.",
+        "Placez-vous dans un espace de 2 de haut inaccessible aux endermen."
+      ],
+      "en": [
+        "Travel to the outer End islands via the main-island gateway.",
+        "Build a large flat spawning platform.",
+        "Make a central hole for endermen to fall.",
+        "Tune the drop to ~40 blocks for one-shot kills.",
+        "Stand in a 2-high gap endermen can't reach."
+      ]
+    },
+    "tips": {
+      "fr": ["Portez une citrouille sculptée pour éviter d'énerver les endermen.", "Butin III augmente fortement les perles."],
+      "en": ["Wear a carved pumpkin so endermen don't aggro.", "Looting III greatly boosts pearls."]
+    }
+  },
+  {
+    "id": "guardian_farm",
+    "emoji": "🔱",
+    "videoId": "OWRjrwof4Jc",
+    "difficulty": "Hard",
+    "tags": ["Resource", "XP", "Ocean"],
+    "name": { "fr": "Ferme à gardiens", "en": "Guardian Farm" },
+    "efficiency": { "fr": "~180 000 XP/h + prismarine & morue", "en": "~180k XP/h + prismarine & cod" },
+    "dimensions": { "fr": "Temple sous-marin entier", "en": "Whole ocean monument" },
+    "videoTitle": { "fr": "Ferme à gardiens facile (1.21)", "en": "Easy Guardian Farm (1.21)" },
+    "description": {
+      "fr": "Bâtie sur un temple sous-marin, les gardiens apparaissent puis sont propulsés vers une chambre de mise à mort. XP colossal + prismarine.",
+      "en": "Built on an ocean monument, guardians spawn and are launched into a kill chamber. Massive XP + prismarine."
+    },
+    "materials": [
+      { "item": "hopper", "qty": 8 }, { "item": "chest", "qty": 4 }, { "item": "magma_block", "qty": 64 },
+      { "item": "glass", "qty": 128 }, { "item": "cobblestone", "qty": 600 }, { "item": "water_bucket", "qty": 16 }
+    ],
+    "steps": {
+      "fr": [
+        "Repérez et videz (ou délimitez) un temple sous-marin en océan profond.",
+        "Définissez le volume d'apparition (58×24×58 sous la base).",
+        "Utilisez des blocs de magma pour propulser les gardiens vers le haut.",
+        "Amenez-les dans une chambre de mise à mort (lave/gravité).",
+        "Récupérez les butins avec des trémies vers les coffres."
+      ],
+      "en": [
+        "Find and drain (or bound) a deep-ocean monument.",
+        "Define the spawn volume (58×24×58 under the base).",
+        "Use magma blocks to launch guardians upward.",
+        "Route them into a kill chamber (lava/gravity).",
+        "Collect drops with hoppers into chests."
+      ]
+    },
+    "tips": {
+      "fr": ["Une potion de respiration aquatique + Aquaphile aide énormément.", "Les gardiens lâchent éclats/cristaux de prismarine et morue."],
+      "en": ["Water Breathing + Aqua Affinity help a lot.", "Guardians drop prismarine shards/crystals and cod."]
+    }
+  },
+  {
+    "id": "wither_skeleton_farm",
+    "emoji": "💀",
+    "videoId": "JaJRPbFLKGM",
+    "difficulty": "Hard",
+    "tags": ["Resource", "Nether", "Combat"],
+    "name": { "fr": "Ferme à wither-squelettes", "en": "Wither Skeleton Farm" },
+    "efficiency": { "fr": "Têtes (beacon) + charbon + os", "en": "Skulls (beacon) + coal + bones" },
+    "dimensions": { "fr": "Forteresse du Nether", "en": "Nether fortress" },
+    "videoTitle": { "fr": "Meilleure ferme à crânes (Java 1.21)", "en": "Best Wither Skull Farm (Java 1.21)" },
+    "description": {
+      "fr": "Dans une forteresse du Nether, les wither-squelettes sont regroupés puis achevés pour obtenir des têtes (nécessaires au Wither et au beacon).",
+      "en": "In a Nether fortress, wither skeletons are gathered and killed for skulls (needed for the Wither and beacon)."
+    },
+    "materials": [
+      { "item": "cobblestone", "qty": 400 }, { "item": "magma_block", "qty": 24 }, { "item": "hopper", "qty": 6 },
+      { "item": "chest", "qty": 3 }, { "item": "oak_trapdoor", "qty": 16 }, { "item": "water_bucket", "qty": 4 }
+    ],
+    "steps": {
+      "fr": [
+        "Trouvez une forteresse du Nether, idéalement au-dessus d'un océan de lave.",
+        "Délimitez la zone et rendez inutilisables les apparitions hors plateforme.",
+        "Étendez la plateforme de briques du Nether pour maximiser les apparitions.",
+        "Canalisez les wither-squelettes vers une fente de mise à mort.",
+        "Récupérez têtes, charbon et os via des trémies."
+      ],
+      "en": [
+        "Find a Nether fortress, ideally over a lava ocean.",
+        "Bound the area and spawn-proof everything off-platform.",
+        "Extend the nether-brick platform to maximize spawns.",
+        "Funnel wither skeletons to a kill slot.",
+        "Collect skulls, coal and bones via hoppers."
+      ]
+    },
+    "tips": {
+      "fr": ["Portez une tête de wither-squelette pour réduire leur distance de détection.", "Butin III augmente le taux de crânes (~2,5%)."],
+      "en": ["Wear a wither skeleton skull to reduce their detection range.", "Looting III raises skull rates (~2.5%)."]
+    }
+  },
+  {
+    "id": "blaze_farm",
+    "emoji": "🔥",
+    "videoId": "jr31ibuhGTM",
+    "difficulty": "Medium",
+    "tags": ["Resource", "Nether", "XP"],
+    "name": { "fr": "Ferme à blazes", "en": "Blaze Farm" },
+    "efficiency": { "fr": "Bâtons de blaze + XP rapide", "en": "Blaze rods + fast XP" },
+    "dimensions": { "fr": "Autour d'un générateur de blazes", "en": "Around a blaze spawner" },
+    "videoTitle": { "fr": "Ferme à blazes la plus facile (1.21+)", "en": "Easiest Blaze Farm (1.21+)" },
+    "description": {
+      "fr": "Autour d'un générateur de blazes en forteresse, les blazes sont poussés vers une fente et achevés. Seule source de poudre de blaze (potions, End).",
+      "en": "Around a fortress blaze spawner, blazes are pushed to a slot and finished. The only source of blaze powder (potions, the End)."
+    },
+    "materials": [
+      { "item": "cobblestone", "qty": 128 }, { "item": "hopper", "qty": 4 }, { "item": "chest", "qty": 2 },
+      { "item": "oak_slab", "qty": 24 }, { "item": "sticky_piston", "qty": 4 }, { "item": "water_bucket", "qty": 2 }
+    ],
+    "steps": {
+      "fr": [
+        "Trouvez un générateur de blazes et sécurisez la salle avec des dalles.",
+        "Construisez une plateforme autour du générateur à la bonne hauteur.",
+        "Utilisez des pistons pour pousser les blazes vers une fente de mise à mort.",
+        "Frappez-les à travers l'ouverture d'un seul coup.",
+        "Placez trémies et coffres pour récupérer bâtons et XP."
+      ],
+      "en": [
+        "Find a blaze spawner and slab-proof the room.",
+        "Build a platform around the spawner at the right height.",
+        "Use pistons to push blazes to a kill slot.",
+        "Hit them through the gap in one shot.",
+        "Add hoppers and chests to collect rods and XP."
+      ]
+    },
+    "tips": {
+      "fr": ["Une potion de résistance au feu rend la ferme bien plus sûre.", "Éclairez les alentours pour éviter les apparitions parasites."],
+      "en": ["A Fire Resistance potion makes it far safer.", "Light up the surroundings to stop stray spawns."]
+    }
+  },
+  {
+    "id": "creeper_farm",
+    "emoji": "💣",
+    "videoId": "KLpxCbv9ScU",
+    "difficulty": "Medium",
+    "tags": ["Resource", "Combat", "Gunpowder"],
+    "name": { "fr": "Ferme à creepers (poudre)", "en": "Creeper / Gunpowder Farm" },
+    "efficiency": { "fr": "Des stacks de poudre à canon/h", "en": "Stacks of gunpowder/hour" },
+    "dimensions": { "fr": "Tour à mobs à hauteur limitée", "en": "Height-limited mob tower" },
+    "videoTitle": { "fr": "Ferme à creepers (1.21.11)", "en": "Creeper Farm (1.21.11)" },
+    "description": {
+      "fr": "Une plateforme sombre à plafond bas n'autorise que les creepers, canalisés vers une fente pour une poudre à canon infinie.",
+      "en": "A dark, low-ceiling platform allows only creepers, funneled to a slot for endless gunpowder."
+    },
+    "materials": [
+      { "item": "cobblestone", "qty": 350 }, { "item": "hopper", "qty": 6 }, { "item": "chest", "qty": 3 },
+      { "item": "water_bucket", "qty": 6 }, { "item": "oak_slab", "qty": 40 }
+    ],
+    "steps": {
+      "fr": [
+        "Construisez une grande plateforme sombre à 24+ blocs du point AFK.",
+        "Limitez le plafond à 2–3 blocs pour bloquer les grands mobs.",
+        "Canalisez les creepers vers une fente centrale de mise à mort.",
+        "Tuez-les d'un coup d'épée à travers l'ouverture.",
+        "Récupérez la poudre via des trémies vers les coffres."
+      ],
+      "en": [
+        "Build a large dark platform 24+ blocks from the AFK spot.",
+        "Limit the ceiling to 2–3 blocks to block tall mobs.",
+        "Funnel creepers to a central kill slot.",
+        "Kill them with one sword hit through the gap.",
+        "Collect gunpowder via hoppers into chests."
+      ]
+    },
+    "tips": {
+      "fr": ["Gardez la plateforme parfaitement sombre : une torche ruine le rendement.", "Butin III augmente la poudre récupérée."],
+      "en": ["Keep the platform fully dark — one torch ruins rates.", "Looting III boosts gunpowder."]
+    }
+  },
+  {
+    "id": "slime_farm",
+    "emoji": "🟢",
+    "videoId": "TaA_qE2kq3c",
+    "difficulty": "Medium",
+    "tags": ["Resource", "AFK"],
+    "name": { "fr": "Ferme à slimes", "en": "Slime Farm" },
+    "efficiency": { "fr": "Boules de slime en masse", "en": "Slimeballs by the stack" },
+    "dimensions": { "fr": "Chunk à slimes sous Y40", "en": "Slime chunk below Y40" },
+    "videoTitle": { "fr": "Ferme à slimes très efficace (1.21+)", "en": "Super Efficient Slime Farm (1.21+)" },
+    "description": {
+      "fr": "Dans un chunk à slimes, des plateformes font apparaître les slimes, poussés vers un piège. Boules de slime pour blocs collants, pistons et leads.",
+      "en": "In a slime chunk, platforms spawn slimes that are pushed to a trap. Slimeballs for sticky blocks, pistons and leads."
+    },
+    "materials": [
+      { "item": "cobblestone", "qty": 500 }, { "item": "hopper", "qty": 8 }, { "item": "chest", "qty": 4 },
+      { "item": "oak_slab", "qty": 64 }, { "item": "water_bucket", "qty": 8 }, { "item": "torch", "qty": 32 }
+    ],
+    "steps": {
+      "fr": [
+        "Localisez un chunk à slimes (outil Chunkbase avec votre seed).",
+        "Creusez toute la zone sous Y40 dans ce chunk.",
+        "Posez des plateformes d'apparition espacées avec des dalles.",
+        "Éclairez tout autour pour concentrer les apparitions de slimes.",
+        "Poussez les slimes vers un piège (noyade/lave) et récupérez via trémies."
+      ],
+      "en": [
+        "Locate a slime chunk (Chunkbase tool with your seed).",
+        "Dig out the whole area below Y40 in that chunk.",
+        "Lay spaced spawn platforms using slabs.",
+        "Light up everything around to focus slime spawns.",
+        "Push slimes to a trap (drown/lava) and collect via hoppers."
+      ]
+    },
+    "tips": {
+      "fr": ["Les slimes apparaissent quelle que soit la luminosité dans un chunk à slimes.", "Éclairez les grottes voisines pour maximiser le rendement."],
+      "en": ["Slimes spawn at any light level inside a slime chunk.", "Light nearby caves to maximize rates."]
+    }
+  },
+  {
+    "id": "drowned_farm",
+    "emoji": "🔱",
+    "videoId": "hajKh-oJuhg",
+    "difficulty": "Medium",
+    "tags": ["Resource", "Copper", "Combat"],
+    "name": { "fr": "Ferme à noyés (cuivre & trident)", "en": "Drowned Farm (Copper & Trident)" },
+    "efficiency": { "fr": "Cuivre, tridents & coquilles de nautile", "en": "Copper, tridents & nautilus shells" },
+    "dimensions": { "fr": "Plateforme immergée à fond de verre", "en": "Glass-bottomed flooded platform" },
+    "videoTitle": { "fr": "Ferme à cuivre & trident (Java 1.21.8+)", "en": "Copper & Trident Farm (Java 1.21.8+)" },
+    "description": {
+      "fr": "Les noyés apparaissent dans l'eau sombre, chutent et sont achevés pour du cuivre, des tridents et des coquilles de nautile.",
+      "en": "Drowned spawn in dark water, fall, and are finished for copper, tridents and nautilus shells."
+    },
+    "materials": [
+      { "item": "glass", "qty": 128 }, { "item": "cobblestone", "qty": 300 }, { "item": "hopper", "qty": 6 },
+      { "item": "chest", "qty": 3 }, { "item": "water_bucket", "qty": 16 }, { "item": "oak_slab", "qty": 24 }
+    ],
+    "steps": {
+      "fr": [
+        "Construisez un bassin d'eau avec une plateforme sombre sous une couche de verre.",
+        "Assurez 13 blocs d'espace sous l'eau pour une luminosité nulle.",
+        "Laissez les noyés chuter ~21 blocs vers le point de mise à mort.",
+        "Achevez-les d'un coup pour garder tridents et XP.",
+        "Récupérez cuivre, tridents et coquilles via trémies."
+      ],
+      "en": [
+        "Build a water pool with a dark platform under a glass layer.",
+        "Ensure 13 blocks of space under the water for zero light.",
+        "Let drowned fall ~21 blocks to the kill spot.",
+        "Finish them in one hit to keep tridents and XP.",
+        "Collect copper, tridents and shells via hoppers."
+      ]
+    },
+    "tips": {
+      "fr": ["Seuls les noyés apparus naturellement lâchent des tridents.", "Butin III améliore le taux de tridents."],
+      "en": ["Only naturally-spawned drowned drop tridents.", "Looting III improves trident rates."]
+    }
+  },
+  {
+    "id": "honey_farm",
+    "emoji": "🐝",
+    "videoId": "T_9x7uvgqM4",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Automatic", "Food"],
+    "name": { "fr": "Ferme à miel (abeilles)", "en": "Honey / Bee Farm" },
+    "efficiency": { "fr": "Miel & rayons de miel en continu", "en": "Honey & honeycomb on tap" },
+    "dimensions": { "fr": "Compacte, modulaire", "en": "Compact, modular" },
+    "videoTitle": { "fr": "Ferme à abeilles automatique (1.21+)", "en": "Automatic Bee Farm (1.21+)" },
+    "description": {
+      "fr": "Des distributeurs récoltent automatiquement les ruches pleines avec fioles et cisailles. Source renouvelable de miel, rayons et blocs de miel.",
+      "en": "Dispensers auto-harvest full hives with bottles and shears. Renewable honey, honeycomb and honey blocks."
+    },
+    "materials": [
+      { "item": "dispenser", "qty": 4 }, { "item": "glass_bottle", "qty": 8 }, { "item": "shears", "qty": 4 },
+      { "item": "hopper", "qty": 4 }, { "item": "chest", "qty": 2 }, { "item": "redstone", "qty": 12 }, { "item": "comparator", "qty": 2 }
+    ],
+    "steps": {
+      "fr": [
+        "Placez des ruches avec des fleurs à proximité et faites-vous des abeilles.",
+        "Devant chaque ruche, un distributeur avec fioles (miel) ou cisailles (rayons).",
+        "Un comparateur lit le niveau de miel (5) de la ruche.",
+        "À niveau 5, le signal déclenche le distributeur pour récolter.",
+        "Récupérez les produits via des trémies vers un coffre."
+      ],
+      "en": [
+        "Place hives with flowers nearby and breed some bees.",
+        "In front of each hive, a dispenser with bottles (honey) or shears (comb).",
+        "A comparator reads the hive's honey level (5).",
+        "At level 5, the signal fires the dispenser to harvest.",
+        "Collect products via hoppers into a chest."
+      ]
+    },
+    "tips": {
+      "fr": ["Récoltez avec un feu de camp sous la ruche pour ne pas énerver les abeilles.", "Répétez le module pour multiplier le rendement."],
+      "en": ["Harvest with a campfire under the hive so bees stay calm.", "Repeat the module to scale output."]
+    }
+  },
+  {
+    "id": "wool_farm",
+    "emoji": "🐑",
+    "videoId": "I91njL0njps",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Automatic"],
+    "name": { "fr": "Ferme à laine (moutons)", "en": "Wool / Sheep Farm" },
+    "efficiency": { "fr": "Laine en continu, triée", "en": "Continuous, sorted wool" },
+    "dimensions": { "fr": "Compacte par mouton", "en": "Compact per sheep" },
+    "videoTitle": { "fr": "Ferme à laine automatique (1.21)", "en": "Automatic Wool Farm (1.21)" },
+    "description": {
+      "fr": "Des moutons sur de l'herbe repoussent leur laine ; un observateur déclenche un distributeur avec cisailles pour tondre automatiquement.",
+      "en": "Sheep on grass regrow wool; an observer fires a dispenser with shears to auto-shear."
+    },
+    "materials": [
+      { "item": "dispenser", "qty": 4 }, { "item": "shears", "qty": 4 }, { "item": "observer", "qty": 4 },
+      { "item": "hopper", "qty": 6 }, { "item": "chest", "qty": 2 }, { "item": "oak_planks", "qty": 24 }
+    ],
+    "steps": {
+      "fr": [
+        "Enfermez un mouton par voie, sur un bloc d'herbe pour qu'il mange.",
+        "Placez un distributeur avec cisailles à hauteur de la laine.",
+        "Un observateur détecte la repousse de la laine.",
+        "Le signal déclenche le distributeur qui tond le mouton.",
+        "La laine tombe dans une trémie puis un coffre (triable par couleur)."
+      ],
+      "en": [
+        "Pen one sheep per lane on a grass block so it can eat.",
+        "Place a dispenser with shears at wool height.",
+        "An observer detects the wool regrowing.",
+        "The signal fires the dispenser to shear the sheep.",
+        "Wool drops into a hopper then a chest (sortable by color)."
+      ]
+    },
+    "tips": {
+      "fr": ["Teignez les moutons pour produire de la laine colorée.", "Une voie par couleur simplifie le tri."],
+      "en": ["Dye the sheep to produce colored wool.", "One lane per color keeps sorting simple."]
+    }
+  },
+  {
+    "id": "villager_crop_farm",
+    "emoji": "🥔",
+    "videoId": "dp19581hvKg",
+    "difficulty": "Easy",
+    "tags": ["Food", "Villager", "Automatic"],
+    "name": { "fr": "Ferme à cultures (villageois)", "en": "Villager Crop Farm" },
+    "efficiency": { "fr": "Nourriture infinie + compost", "en": "Endless food + compost" },
+    "dimensions": { "fr": "Champ compact 9×9", "en": "Compact 9×9 field" },
+    "videoTitle": { "fr": "Ferme à cultures automatique (1.21.11)", "en": "Automatic Villager Crop Farm (1.21.11)" },
+    "description": {
+      "fr": "Un villageois fermier plante et récolte automatiquement ; le surplus déborde vers des trémies. Production de nourriture 100% mains libres.",
+      "en": "A farmer villager auto-plants and harvests; overflow spills into hoppers. Fully hands-off food."
+    },
+    "materials": [
+      { "item": "hopper", "qty": 3 }, { "item": "chest", "qty": 2 }, { "item": "water_bucket", "qty": 1 },
+      { "item": "wheat", "qty": 9 }, { "item": "glass", "qty": 24 }, { "item": "composter", "qty": 1 }
+    ],
+    "steps": {
+      "fr": [
+        "Labourez un champ 9×9 avec une source d'eau centrale.",
+        "Fermez-le en verre pour que le fermier reste dedans.",
+        "Placez des trémies sous la bande de récupération.",
+        "Donnez des graines de départ au fermier pour lancer la plantation.",
+        "Le surplus de la récolte déborde vers vos coffres."
+      ],
+      "en": [
+        "Till a 9×9 field with a central water source.",
+        "Enclose it in glass so the farmer stays inside.",
+        "Place hoppers under the collection strip.",
+        "Give the farmer starter seeds to begin planting.",
+        "Harvest overflow spills into your chests."
+      ]
+    },
+    "tips": {
+      "fr": ["Un composteur transforme le surplus en poudre d'os.", "Deux fermiers doublent la vitesse de récolte."],
+      "en": ["A composter turns overflow into bone meal.", "Two farmers double harvest speed."]
+    }
+  },
+  {
+    "id": "sugarcane_farm",
+    "emoji": "🎋",
+    "videoId": "n45M-Qxy8Gw",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Automatic", "Paper"],
+    "name": { "fr": "Ferme à canne à sucre", "en": "Sugar Cane Farm" },
+    "efficiency": { "fr": "Papier & sucre renouvelables", "en": "Renewable paper & sugar" },
+    "dimensions": { "fr": "Modulaire par rangée", "en": "Modular per row" },
+    "videoTitle": { "fr": "Ferme à canne la plus rapide (Java 1.21)", "en": "Fastest Sugar Cane Farm (Java 1.21)" },
+    "description": {
+      "fr": "Des observateurs détectent la pousse de la canne et déclenchent des pistons pour la casser. Source de papier, livres, cartes et fusées.",
+      "en": "Observers detect cane growth and fire pistons to break it. Source of paper, books, maps and rockets."
+    },
+    "materials": [
+      { "item": "observer", "qty": 8 }, { "item": "piston", "qty": 8 }, { "item": "hopper", "qty": 8 },
+      { "item": "chest", "qty": 2 }, { "item": "sugar_cane", "qty": 16 }, { "item": "water_bucket", "qty": 2 }, { "item": "redstone", "qty": 12 }
+    ],
+    "steps": {
+      "fr": [
+        "Plantez la canne sur du sable/terre le long de l'eau.",
+        "Placez un observateur face au 2e bloc de chaque canne.",
+        "Reliez chaque observateur à un piston qui casse la canne.",
+        "Un courant d'eau derrière les pistons ramène la canne aux trémies.",
+        "Répétez le module horizontalement autant que voulu."
+      ],
+      "en": [
+        "Plant cane on sand/dirt along water.",
+        "Place an observer facing the 2nd block of each cane.",
+        "Wire each observer to a piston that breaks the cane.",
+        "A water stream behind the pistons sweeps cane to hoppers.",
+        "Tile the module horizontally as much as you want."
+      ]
+    },
+    "tips": {
+      "fr": ["Les observateurs ne se déclenchent qu'à la pousse : peu de lag.", "Reliez la sortie à un fabricateur pour du papier automatique."],
+      "en": ["Observers only fire on growth — very lag-friendly.", "Feed the output into a Crafter for auto paper."]
+    }
+  },
+  {
+    "id": "bamboo_farm",
+    "emoji": "🎍",
+    "videoId": "NIOiluseRP0",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Fuel", "Automatic"],
+    "name": { "fr": "Ferme à bambou (combustible)", "en": "Bamboo Farm (Fuel)" },
+    "efficiency": { "fr": "Combustible quasi infini", "en": "Nearly infinite fuel" },
+    "dimensions": { "fr": "Compacte, extensible", "en": "Compact, expandable" },
+    "videoTitle": { "fr": "Ferme à bambou combustible (1.21)", "en": "Bamboo Fuel Farm (1.21)" },
+    "description": {
+      "fr": "Le bambou pousse vite et sert de combustible ; des observateurs déclenchent des pistons pour le récolter automatiquement.",
+      "en": "Bamboo grows fast and works as fuel; observers fire pistons to auto-harvest it."
+    },
+    "materials": [
+      { "item": "observer", "qty": 6 }, { "item": "piston", "qty": 6 }, { "item": "hopper", "qty": 6 },
+      { "item": "hopper_minecart", "qty": 1 }, { "item": "chest", "qty": 2 }, { "item": "bamboo", "qty": 8 }
+    ],
+    "steps": {
+      "fr": [
+        "Plantez le bambou (lumière 9+) en colonnes espacées.",
+        "Un observateur face au sommet détecte la pousse.",
+        "Le signal casse la pousse via une chaîne de pistons.",
+        "Un wagonnet à trémie collecte le bambou tombé au sol.",
+        "Envoyez la récolte vers des fourneaux ou vos coffres."
+      ],
+      "en": [
+        "Plant bamboo (light 9+) in spaced columns.",
+        "An observer facing the top detects growth.",
+        "The signal breaks the growth via a piston chain.",
+        "A hopper minecart collects fallen bamboo.",
+        "Route the harvest to furnaces or your chests."
+      ]
+    },
+    "tips": {
+      "fr": ["Le bambou brûle vite : prévoyez une grande ferme.", "Idéal pour alimenter un super-fourneau."],
+      "en": ["Bamboo burns quickly — build it large.", "Great for powering a super smelter."]
+    }
+  },
+  {
+    "id": "kelp_farm",
+    "emoji": "🌿",
+    "videoId": "UDZNyAsYXpQ",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Fuel", "Automatic"],
+    "name": { "fr": "Ferme à varech (kelp)", "en": "Kelp Farm" },
+    "efficiency": { "fr": "Combustible renouvelable (kelp séché)", "en": "Renewable fuel (dried kelp)" },
+    "dimensions": { "fr": "Colonne compacte 5×5", "en": "Compact 5×5 column" },
+    "videoTitle": { "fr": "Meilleure ferme à varech (1.21+)", "en": "Best Kelp Farm (1.21+)" },
+    "description": {
+      "fr": "Le varech pousse jusqu'à un observateur qui déclenche un piston pour le casser. Séché, c'est un excellent combustible renouvelable.",
+      "en": "Kelp grows up to an observer that fires a piston to break it. Dried, it's superb renewable fuel."
+    },
+    "materials": [
+      { "item": "observer", "qty": 1 }, { "item": "piston", "qty": 1 }, { "item": "hopper", "qty": 2 },
+      { "item": "chest", "qty": 1 }, { "item": "water_bucket", "qty": 2 }, { "item": "glass", "qty": 12 }
+    ],
+    "steps": {
+      "fr": [
+        "Créez une colonne d'eau encadrée par du verre.",
+        "Plantez du varech au fond de la colonne.",
+        "Placez un observateur face au sommet de pousse.",
+        "Reliez l'observateur à un piston qui casse le varech à hauteur max.",
+        "Le varech cassé descend vers une trémie et un coffre."
+      ],
+      "en": [
+        "Create a water column framed by glass.",
+        "Plant kelp at the bottom of the column.",
+        "Place an observer facing the top growth point.",
+        "Wire the observer to a piston that breaks the kelp at max height.",
+        "Broken kelp floats down into a hopper and chest."
+      ]
+    },
+    "tips": {
+      "fr": ["Les blocs de kelp séché fondent 20 objets chacun.", "Empilez plusieurs colonnes pour multiplier la sortie."],
+      "en": ["Dried kelp blocks smelt 20 items each.", "Stack multiple columns to multiply output."]
+    }
+  },
+  {
+    "id": "cactus_farm",
+    "emoji": "🌵",
+    "videoId": "jlXDVkgSjnc",
+    "difficulty": "Easy",
+    "tags": ["Resource", "Automatic"],
+    "name": { "fr": "Ferme à cactus", "en": "Cactus Farm" },
+    "efficiency": { "fr": "~1500 cactus/h (teinture verte, XP)", "en": "~1500 cactus/h (green dye, XP)" },
+    "dimensions": { "fr": "Compacte, extensible", "en": "Compact, expandable" },
+    "videoTitle": { "fr": "Ferme à cactus (1.21.11)", "en": "Cactus Farm (1.21.11)" },
+    "description": {
+      "fr": "Le cactus pousse puis se casse contre un bloc adjacent ; il tombe dans des trémies. Excellent pour la teinture verte et l'XP au fourneau.",
+      "en": "Cactus grows then breaks on an adjacent block, falling into hoppers. Great for green dye and furnace XP."
+    },
+    "materials": [
+      { "item": "cactus", "qty": 20 }, { "item": "sand", "qty": 20 }, { "item": "hopper", "qty": 8 },
+      { "item": "chest", "qty": 2 }, { "item": "glass", "qty": 20 }
+    ],
+    "steps": {
+      "fr": [
+        "Placez du sable sur des trémies reliées à un coffre.",
+        "Plantez un cactus sur chaque bloc de sable.",
+        "Mettez un bloc en diagonale au niveau supérieur.",
+        "Quand le cactus pousse, il se casse contre ce bloc.",
+        "Les cactus tombent dans les trémies puis le coffre."
+      ],
+      "en": [
+        "Place sand on hoppers connected to a chest.",
+        "Plant a cactus on each sand block.",
+        "Put a block diagonally at the level above.",
+        "When the cactus grows, it breaks on that block.",
+        "Cactus falls into the hoppers then the chest."
+      ]
+    },
+    "tips": {
+      "fr": ["Faites fondre le cactus en teinture verte pour de l'XP.", "Extensible à l'infini en carrelant le module."],
+      "en": ["Smelt cactus into green dye for XP.", "Infinitely expandable by tiling the module."]
+    }
+  },
+  {
+    "id": "trading_hall",
+    "emoji": "💎",
+    "videoId": "YzzJxdWQAbw",
+    "difficulty": "Medium",
+    "tags": ["Emeralds", "Villager", "Resource"],
+    "name": { "fr": "Hall de commerce (villageois)", "en": "Villager Trading Hall" },
+    "efficiency": { "fr": "Échanges à 1 émeraude, enchantements", "en": "1-emerald trades, enchants" },
+    "dimensions": { "fr": "Modulaire, 16+ villageois", "en": "Modular, 16+ villagers" },
+    "videoTitle": { "fr": "Hall de commerce — tout à 1 émeraude (1.21.10)", "en": "Trading Hall — all 1 emerald (1.21.10)" },
+    "description": {
+      "fr": "Des villageois assignés à des établis offrent des échanges optimisés (jusqu'à 1 émeraude) : livres enchantés, émeraudes, réductions.",
+      "en": "Villagers assigned to workstations give optimized trades (down to 1 emerald): enchanted books, emeralds, discounts."
+    },
+    "materials": [
+      { "item": "oak_planks", "qty": 64 }, { "item": "oak_slab", "qty": 32 }, { "item": "glass", "qty": 32 },
+      { "item": "hopper", "qty": 8 }, { "item": "chest", "qty": 4 }, { "item": "white_bed", "qty": 16 }, { "item": "lectern", "qty": 4 }
+    ],
+    "steps": {
+      "fr": [
+        "Amenez ~16 villageois sans métier dans des cellules individuelles.",
+        "Placez l'établi voulu devant chaque villageois (lutrin = bibliothécaire).",
+        "Relancez le métier (casser/replacer l'établi) jusqu'au bon échange.",
+        "Baissez les prix : Héros du village + soigner un villageois zombie.",
+        "Ajoutez trémies et coffres pour automatiser paiements et stocks."
+      ],
+      "en": [
+        "Bring ~16 jobless villagers into individual cells.",
+        "Place the desired workstation in front of each (lectern = librarian).",
+        "Reroll the job (break/replace the station) until the right trade.",
+        "Lower prices: Hero of the Village + cure a zombie villager.",
+        "Add hoppers and chests to automate payment and storage."
+      ]
+    },
+    "tips": {
+      "fr": ["Soigner un villageois zombie donne des réductions énormes et permanentes.", "Visez Réparation, Fortune III et Toucher de soie sur les libraires."],
+      "en": ["Curing a zombie villager gives huge permanent discounts.", "Aim for Mending, Fortune III and Silk Touch from librarians."]
+    }
+  }
+]
+;

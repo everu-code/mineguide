@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineGuide · Fermes Minecraft</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html" title="Accueil"><span class="logo">⛏️</span></a>
+      <div class="header-center">
+        <h1 class="page-title" data-i18n="page_title_farms">Constructeur &amp; suivi de fermes</h1>
+        <div class="page-sub"><span data-i18n="brand_sub">MineGuide</span> <span class="ver">26.2</span></div>
+      </div>
+      <nav class="mainnav">
+        <a href="index.html">🧱 <span class="lbl" data-i18n="nav_crafting">Fabrication</span></a>
+        <a href="farms.html" class="active">🏭 <span class="lbl" data-i18n="nav_farms">Fermes</span></a>
+        <button class="lang-btn" id="langToggle">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="farm-grid" id="farmGrid" style="margin-top:26px"></section>
+  </main>
+
+  <footer class="foot wrap">
+    <span data-i18n="made_by">Made by ever</span>
+  </footer>
+
+  <!-- Modal (video) -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="data/items.js"></script>
+  <script src="data/farms.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/farms.js"></script>
+</body>
+</html>
