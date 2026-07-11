@@ -3054,6 +3054,118 @@ window.FARMS = [
     "videoId": "9yNwrWedkYY"
   },
   {
+    "id": "villager_breeder_dispenser",
+    "emoji": "🍞",
+    "videoId": "lxj5xOdwsI8",
+    "difficulty": "Easy",
+    "tags": [
+      "Villager",
+      "Automatic",
+      "AFK"
+    ],
+    "category": "villager",
+    "name": {
+      "fr": "Reproducteur de villageois (distributeur)",
+      "en": "Villager Breeder (Dispenser)"
+    },
+    "efficiency": {
+      "fr": "~1 bébé / minute, auto-nourri",
+      "en": "~1 baby / minute, auto-fed"
+    },
+    "dimensions": {
+      "fr": "Compact 5×5",
+      "en": "Compact 5×5"
+    },
+    "videoTitle": {
+      "fr": "Reproducteur compact au distributeur (26.2+)",
+      "en": "Compact Dispenser Villager Breeder (26.2+)"
+    },
+    "description": {
+      "fr": "Une version minuscule du reproducteur : au lieu d'un grand champ de cultures, un distributeur balance de la nourriture aux deux villageois pour les rendre « prêts » à se reproduire. Les bébés sont séparés automatiquement. Parfait quand la place manque.",
+      "en": "A tiny take on the breeder: instead of a big crop field, a dispenser throws food at the two villagers to make them 'willing' to breed. Babies are separated automatically. Perfect when space is tight."
+    },
+    "materials": [
+      {
+        "item": "white_bed",
+        "qty": 3
+      },
+      {
+        "item": "dispenser",
+        "qty": 1
+      },
+      {
+        "item": "comparator",
+        "qty": 1
+      },
+      {
+        "item": "repeater",
+        "qty": 2
+      },
+      {
+        "item": "redstone",
+        "qty": 8
+      },
+      {
+        "item": "hopper",
+        "qty": 4
+      },
+      {
+        "item": "chest",
+        "qty": 2
+      },
+      {
+        "item": "water_bucket",
+        "qty": 2
+      },
+      {
+        "item": "glass",
+        "qty": 12
+      },
+      {
+        "item": "stone_bricks",
+        "qty": 24
+      },
+      {
+        "item": "oak_trapdoor",
+        "qty": 2
+      }
+    ],
+    "steps": {
+      "fr": [
+        "Monte une petite boîte 5×5 en stone_bricks avec une façade en glass pour surveiller l'intérieur.",
+        "Place 3 white_bed à l'intérieur (deux pour les parents, une pour le bébé), libres d'accès.",
+        "Amène 2 villageois dans la boîte (en bateau ou wagonnet).",
+        "Installe un dispenser au niveau des villageois, rempli de pain (ou carottes / pommes de terre / betteraves).",
+        "Câble une horloge lente (comparator en boucle + 2 repeater) sur le dispenser pour qu'il jette la nourriture au sol régulièrement.",
+        "Les villageois ramassent la nourriture, deviennent « prêts » et se reproduisent tant qu'un lit est libre.",
+        "Laisse un trou d'un bloc dans le sol avec de l'eau et des hopper : les bébés sont poussés vers un coffre de collecte.",
+        "Reste à proximité (AFK) pour garder la zone chargée."
+      ],
+      "en": [
+        "Build a small 5×5 box in stone_bricks with a glass front to watch inside.",
+        "Place 3 white_bed inside (two for the parents, one for the baby) with clear access.",
+        "Bring 2 villagers into the box (by boat or minecart).",
+        "Set a dispenser at villager height, filled with bread (or carrots / potatoes / beetroot).",
+        "Wire a slow clock (comparator loop + 2 repeaters) to the dispenser so it drops food on the floor regularly.",
+        "The villagers pick up the food, become 'willing', and breed as long as a bed is free.",
+        "Leave a one-block gap in the floor with water and hoppers so babies are swept into a collection chest.",
+        "Stay nearby (AFK) to keep the area loaded."
+      ]
+    },
+    "tips": {
+      "fr": [
+        "Le distributeur doit contenir du pain (3) ou 12 carottes/pommes de terre/betteraves par cycle : le pain est le plus compact.",
+        "Il faut au moins 3 lits accessibles à portée, sinon les villageois refusent de se reproduire.",
+        "Une horloge toutes les quelques secondes suffit — trop rapide gaspille la nourriture."
+      ],
+      "en": [
+        "Fill the dispenser with bread (3) or 12 carrots/potatoes/beetroot per cycle — bread is the most compact.",
+        "You need at least 3 reachable beds in range, or the villagers won't breed.",
+        "A clock every few seconds is plenty — too fast just wastes food."
+      ]
+    }
+  },
+  {
     "id": "librarian_book_farm",
     "emoji": "📚",
     "difficulty": "Medium",
